@@ -1,5 +1,9 @@
 theme: jekyll-theme-cayman
 title: Chai's Portfolio
-description: Welcome to my portfolio! I am a passionate programmer and aspiring game developer. test
+description: Welcome to my portfolio! I am a passionate programmer and aspiring game developer.
 
-github_username: VanillaChai
+author:
+  name             : "Your Sidebar Name"
+  avatar           : "profile.png"
+  bio              : "Your biography for the left-hand sidebar"
+  location         : "Location"
