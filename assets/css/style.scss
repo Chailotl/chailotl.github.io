@@ -2,6 +2,21 @@
 ---
 
 @import "jekyll-theme-cayman";
-html, body, input, textarea, select, button {
+body {
     background-color: #181a1b;
+    color: rgb(166, 158, 147);
+}
+
+a {
+    color: rgb(101, 172, 230);
+    text-decoration-color: initial;
+}
+
+.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
+    color: rgb(103, 234, 169);
+}
+
+.main-content hr {
+    background-color: rgb(32, 35, 37);
+    border-color: initial;
 }
