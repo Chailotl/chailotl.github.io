@@ -4,12 +4,6 @@ Since middleschool, I've worked on dozens of personal projects spanning C++, C#,
 ## Paddle Effect
 A work-in-progress Unity game.
 
-## Acheron Pong 2
-Todo
-
-## Vector Zenith
-Todo
-
 ---
 
 # Software
