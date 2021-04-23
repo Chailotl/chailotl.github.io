@@ -1,3 +1,5 @@
+Since middleschool, I've worked on dozens of personal projects spanning C++, C#, Java, Javascript, Node.js, and more.
+
 # Games
 ## Paddle Effect
 A work-in-progress Unity game.
