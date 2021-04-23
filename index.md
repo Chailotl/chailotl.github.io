@@ -1,5 +1,3 @@
-Welcome to my portfolio! I am a passionate programmer and aspiring game developer. Since middleschool, I've worked on dozens of personal projects spanning C++, C#, Java, Javascript, and GML.
-
 # Games
 ## Paddle Effect
 A work-in-progress Unity game.
