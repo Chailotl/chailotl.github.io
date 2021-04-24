@@ -2,3 +2,6 @@ remote_theme: lewismiddleton/cayman-dark
 title: Chai's Portfolio
 description: Hi, I'm Chai. I am a passionate programmer and aspiring game developer.
 name: Chai
+markdown: kramdown
+kramdown:
+  parse_block_html: true
