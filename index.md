@@ -25,10 +25,10 @@ A Fabric mod for Minecraft. It adds new blocks, items, features, and QoL tweaks 
 
 # Plugins
 ## [Mini Golf](https://github.com/VanillaChai/mini-golf)
-A Spigot plugin for Minecraft servers. It unsurprisingly lets you play mini golf in Minecraft with your friends. It adds a few custom items: the golf ball, iron, putter, wedge, and golf whistle. The golf ball entity has various unique interactions with a handful of blocks, letting you design and create interesting mini golf courses.
+A Spigot plugin for Minecraft servers. It addes a few custom items to let you play mini golf with your friends.
 
 ## [Warp Books](https://github.com/VanillaChai/warp-books)
-A Spigot plugin for Minecraft servers. It adds a few end-game warp items: the warp page, warp book, and warp banner. Warp pages are one-time use warps that can be bound to a location. Warp books are permanent warps that require warp banners to teleport to. When you right-click a warp banner with a warp book it will save that location in the book, and will let you freely teleport there.
+A Spigot plugin for Minecraft servers. It adds a few end-game warp items: the warp page, warp book, and warp banner.
 
 ---
 
