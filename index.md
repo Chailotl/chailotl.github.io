@@ -29,6 +29,18 @@ A Fabric mod for Minecraft. It adds new blocks, items, features, and QoL tweaks 
 
 ---
 
+# Tools
+## [Stopwatch](https://chailotl.github.io/stopwatch)
+A page that displays a simple stopwatch. Useful for streamers as an AFK stopwatch.
+
+## [Countdown](https://chailotl.github.io/countdown)
+A page that displays a countdown, and displays text when the countdown ends. Useful for streamers as a countdown to when their stream starts.
+
+## [Zalgo](https://chailotl.github.io/zalgo)
+A zalgo text corrupter.
+
+---
+
 # Plugins
 ## [Mini Golf](https://github.com/Chailotl/mini-golf)
 A Spigot plugin for Minecraft servers. It adds a few mini golf related items to let you play mini golf with your friends.
