@@ -4,6 +4,12 @@ Since middleschool, I've worked on dozens of personal projects spanning C++, C#,
 ## Paddle Effect
 A work-in-progress Unity game.
 
+## [Railway Relaxo](https://github.com/Chailotl/railway-relaxo)
+A casual train logistics manager built in Unity. Currently WIP.
+
+## [Fortwards Redux](https://github.com/Chailotl/fortwars-redux)
+A gamemode for Garry's Mod inspired by the original Fortwars. Currently WIP.
+
 ---
 
 # Software
