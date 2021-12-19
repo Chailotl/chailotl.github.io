@@ -34,12 +34,13 @@
 		<script>
 			// Read url parameters
 			var urlParams = new URLSearchParams(window.location.search);
-			var time = urlParams.get("time");
+			var hour = urlParams.get("hour");
+			var minute = urlParams.get("minute");
 			var text = urlParams.get("text");
 			
 			// Set the date we're counting down to
 			var start = new Date();
-			start.setHours(time, 0, 0); // 7pm
+			start.setHours(hour, minute, 0);
 			
 			function pad(num) {
 				return ("0" + parseInt(num)).substr(-2);
