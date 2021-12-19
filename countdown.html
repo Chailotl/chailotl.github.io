@@ -32,7 +32,7 @@
 	<body>
 		<div id="form" style="visibility: invisible">
 			<input type="time" id="time" name="time">
-			<input type="text" id="text" name="text">
+			<input type="text" id="text" name="text" value="LIVE">
 			<input type="submit" value="Submit" onclick="openURL()">
 		</div>
 		<p id="timer"></p>
@@ -41,9 +41,11 @@
 			var urlParams = new URLSearchParams(window.location.search);
 			var hour = urlParams.get("hour");
 			var minute = urlParams.get("minute");
+			if (minute === null) { minute = 0; }
 			var text = urlParams.get("text");
+			if (text === null) { text = "LIVE" }
 			
-			if (hours === null) {
+			if (hour === null) {
 				 document.getElementById("form").setAttribute('style', 'visibility: visible');
 				 document.getElementById("timer").setAttribute('style', 'visibility: invisible');
 			}
