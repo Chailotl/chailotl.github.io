@@ -51,12 +51,16 @@
 				var distance = start - now;
 
 				// Time calculations for minutes and seconds
-				//var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 				// Output the result
-				document.getElementById("time").innerHTML = minutes + ":" + pad(seconds);
+				var str = minutes + ":" + pad(seconds);
+				if (hours > 0) {
+					str = hours + ":" + pad(minutes) + ":" + pad(seconds);
+				}
+				document.getElementById("time").innerHTML = str;
 
 				// If the count down is over, write some text 
 				if (distance < 0) {
