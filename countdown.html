@@ -51,11 +51,13 @@
 			}
 			
 			function openURL() {
-				var time = document.getElementById("time").value.split(":");
-				hour = time[0];
-				minute = time[1];
-				text = document.getElementById("text").value;
-				window.location = `https://chailotl.github.io/countdown?hour=${hour}&minute=${minute}&text=${text}`;
+				var time = document.getElementById("time").value;
+				if (time == "") {
+					alert("Please input a time");
+				} else {
+					time = time.split(":");
+					window.location = `https://chailotl.github.io/countdown?hour=${time[0]}&minute=${time[1]}&text=${document.getElementById("text").value}`;
+				}
 			}
 			
 			function pad(num) {
