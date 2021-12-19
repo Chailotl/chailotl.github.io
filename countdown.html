@@ -30,7 +30,7 @@
 		</style>
 	</head>
 	<body>
-		<div id="form" style="visibility: invisible">
+		<div id="form" style="display: none">
 			<input type="time" id="time" name="time">
 			<input type="text" id="text" name="text" value="LIVE">
 			<input type="submit" value="Submit" onclick="openURL()">
@@ -46,8 +46,8 @@
 			if (text === null) { text = "LIVE" }
 			
 			if (hour === null) {
-				 document.getElementById("form").setAttribute('style', 'visibility: visible');
-				 document.getElementById("timer").setAttribute('style', 'visibility: invisible');
+				 document.getElementById("form").style.display = "initial";
+				 document.getElementById("timer").style.display = "none";
 			}
 			
 			function openURL() {
