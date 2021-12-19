@@ -41,16 +41,18 @@
 			var urlParams = new URLSearchParams(window.location.search);
 			var hour = urlParams.get("hour");
 			var minute = urlParams.get("minute");
-			if (minute === null) { minute = 0; }
 			var text = urlParams.get("text");
-			if (text === null) { text = "LIVE" }
 			
+			// Verify values
 			if (hour === null) {
 				 document.getElementById("form").style.display = "initial";
 				 document.getElementById("timer").style.display = "none";
 			}
+			if (minute === null) { minute = 0; }
+			if (text === null) { text = "LIVE" }
 			
 			function openURL() {
+				// Get inputs, verify, and send user to url
 				var time = document.getElementById("time").value;
 				if (time == "") {
 					alert("Please input a time");
