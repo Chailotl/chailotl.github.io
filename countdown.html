@@ -30,7 +30,12 @@
 		</style>
 	</head>
 	<body>
-		<p id="time"></p>
+		<div id="form" style="visibility: invisible">
+			<input type="time" id="time" name="time">
+			<input type="text" id="text" name="text">
+			<input type="submit" value="Submit" onclick="openURL()">
+		</div>
+		<p id="timer"></p>
 		<script>
 			// Read url parameters
 			var urlParams = new URLSearchParams(window.location.search);
@@ -38,13 +43,26 @@
 			var minute = urlParams.get("minute");
 			var text = urlParams.get("text");
 			
-			// Set the date we're counting down to
-			var start = new Date();
-			start.setHours(hour, minute, 0);
+			if (hours === null) {
+				 document.getElementById("form").setAttribute('style', 'visibility: visible');
+				 document.getElementById("timer").setAttribute('style', 'visibility: invisible');
+			}
+			
+			function openURL() {
+				var time = document.getElementById("time").value.split(":");
+				hour = time[0];
+				minute = time[1];
+				text = document.getElementById("text").value;
+				window.location = `https://chailotl.github.io/countdown?hour=${hour}&minute=${minute}&text=${text}`;
+			}
 			
 			function pad(num) {
 				return ("0" + parseInt(num)).substr(-2);
 			}
+			
+			// Set the date we're counting down to
+			var start = new Date();
+			start.setHours(hour, minute, 0);
 
 			// Update the count down every 1 second
 			var x = setInterval(function() {
@@ -61,12 +79,12 @@
 				if (hours > 0) {
 					str = hours + ":" + pad(minutes) + ":" + pad(seconds);
 				}
-				document.getElementById("time").innerHTML = str;
+				document.getElementById("timer").innerHTML = str;
 
 				// If the count down is over, write some text 
 				if (distance < 0) {
 					clearInterval(x);
-					document.getElementById("time").innerHTML = text;
+					document.getElementById("timer").innerHTML = text;
 				}
 			}, 100);
 		</script>
