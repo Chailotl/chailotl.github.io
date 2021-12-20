@@ -1,4 +1,6 @@
-Hello world
+layout: page
+title: "Z̥̖̩᷃᷁ͅa͇̭͡l̮᷂̕g̢̻̎͐o̴̢͖̬ Text Corrupter"
+description: "Dresses up text with combining characters to make it look <span class='role'>corrupted</span>.<br>The term <span class='role'>zalgo</span> is coined from <a href='http://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags/1732454#1732454'>this StackOverflow post</a>."
 
 <form style='padding: 0 32px;'>
   <textarea id='input' rows='5' autofocus placeholder='Type text here...' oninput='update()'></textarea>
