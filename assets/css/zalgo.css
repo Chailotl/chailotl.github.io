@@ -1,3 +1,9 @@
+.highlight {
+	color: rgb(103, 234, 169);
+}
+
+
+
 /* Buttons */
 .container {
 	display: flex;
@@ -63,10 +69,6 @@
 	top: 105%;
 	left: 50%;
 	transform: translateX(-50%) scale(0.0);
-}
-
-.role {
-	color: rgb(200, 200, 255);
 }
 
 .center {
