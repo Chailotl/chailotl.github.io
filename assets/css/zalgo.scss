@@ -1,5 +1,7 @@
+@import "variables";
+
 .accent {
-	color: rgb(103, 234, 169);
+	color: rgb(176, 156, 253);
 }
 
 .center {
@@ -20,7 +22,7 @@ textarea {
 	resize: none;
 	
 	color: rgb(238, 238, 238);
-	background-image: linear-gradient(rgb(103, 234, 169), rgb(103, 234, 169)), linear-gradient(rgb(150, 150, 150), rgb(150, 150, 150));
+	background-image: linear-gradient($body-link-color, $body-link-color), linear-gradient(rgb(150, 150, 150), rgb(150, 150, 150));
 	background-size: 0px 2px, 100% 1px;
 	background-repeat: no-repeat;
 	background-position: center bottom, center calc(100% - 1px);
@@ -42,8 +44,8 @@ input[type="range"] {
 	-webkit-appearance: none;
 	height: 8px;
 	width: 194px;
-	background: rgb(80, 80, 80);
-	background-image: linear-gradient(rgb(103, 234, 169), rgb(103, 234, 169));
+	background: rgb(50, 50, 50);
+	background-image: linear-gradient($body-link-color, $body-link-color);
 	background-repeat: no-repeat;
 }
 input[type="range"]:focus {
@@ -63,14 +65,14 @@ input[type="range"]::-webkit-slider-thumb {
 	-webkit-appearance: none;
 	height: 16px;
 	width: 8px;
-	background: rgb(103, 234, 169);
+	background: $body-link-color;
 	margin-top: -4px;
 	border-radius: 0%;
 }
 input[type="range"]::-moz-range-thumb {
 	height: 16px;
 	width: 8px;
-	background: rgb(103, 234, 169);
+	background: $body-link-color;
 	margin-top: -4px;
 	border-radius: 0%;
 }
