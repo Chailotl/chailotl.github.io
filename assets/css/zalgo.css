@@ -33,7 +33,13 @@ textarea:focus {
 	outline: none;
 }
 
+textarea::placeholder {
+	color: rgb(50, 50, 50);
+}
 textarea::-webkit-input-placeholder {
+	color: rgb(50, 50, 50);
+}
+textarea:-moz-placeholder {
 	color: rgb(50, 50, 50);
 }
 textarea::-moz-placeholder {
@@ -42,7 +48,7 @@ textarea::-moz-placeholder {
 textarea:-ms-input-placeholder {
 	color: rgb(50, 50, 50);
 }
-textarea::placeholder {
+textarea::-ms-input-placeholder {
 	color: rgb(50, 50, 50);
 }
 
