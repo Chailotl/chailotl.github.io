@@ -56,7 +56,10 @@ input[type="range"] {
 	}
 }
 
-input[type="range"]::-webkit-slider-runnable-track,
+input[type="range"]::-webkit-slider-runnable-track {
+	background: transparent;
+	height: 8px;
+}
 input[type="range"]::-moz-range-track {
 	background: transparent;
 	height: 8px;
