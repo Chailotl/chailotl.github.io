@@ -62,9 +62,15 @@ input[type="range"]::-moz-range-track {
 	height: 8px;
 }
 
-input[type="range"]::-webkit-slider-thumb,
-input[type="range"]::-moz-range-thumb {
+input[type="range"]::-webkit-slider-thumb {
 	-webkit-appearance: none;
+	height: 16px;
+	width: 8px;
+	background: $body-link-color;
+	margin-top: -4px;
+	border-radius: 0%;
+}
+input[type="range"]::-moz-range-thumb {
 	height: 16px;
 	width: 8px;
 	background: $body-link-color;
@@ -78,33 +84,5 @@ input[type="range"]::-moz-range-thumb {
 
 	p {
 		margin-bottom: 6px;
-	}
-}
-
-/* Tooltips */
-.tooltip {
-	position: relative;
-	display: inline-flex;
-	white-space: nowrap;
-	
-	.tooltiptext {
-		position: absolute;
-		z-index: 2;
-		padding: 6px 8px;
-		border-radius: 2px;
-		font-size: 12px;
-		line-height: 12px;
-		font-weight: normal;
-		color: #fff;
-		background: #3BB582;
-		text-align: center;
-		transition: transform 0.075s ease;
-		top: 120%;
-		left: 50%;
-		transform: translateX(-50%) scale(0.0);
-	}
-	
-	.active {
-		transform: translateX(-50%) scale(1.0) !important;
 	}
 }
