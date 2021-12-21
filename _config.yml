@@ -1,5 +1,5 @@
-# remote_theme: lewismiddleton/cayman-dark
-theme: jekyll-theme-cayman
+# theme: jekyll-theme-cayman
+remote_theme: chailotl/cayman-dark
 title: Chai's Portfolio
 description: Hi, I'm Chai. I am a passionate programmer and aspiring game developer.
 name: Chai
