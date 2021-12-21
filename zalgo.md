@@ -137,7 +137,6 @@ function update() {
 }
 
 const rangeInputs = document.querySelectorAll('input[type="range"]')
-const numberInput = document.querySelector('input[type="number"]')
 
 function handleInputChange(e) {
   let target = e.target
@@ -153,7 +152,6 @@ function handleInputChange(e) {
 
 rangeInputs.forEach(input => {
   input.addEventListener('input', handleInputChange)
+  handleInputChange(input)
 })
-
-numberInput.addEventListener('input', handleInputChange)
 </script>
