@@ -6,7 +6,7 @@ description: "Dresses up text with combining characters to make it look <span cl
 <link rel="stylesheet" href="/assets/css/zalgo.css">
 
 <div class='container tooltip'>
-  <button class="button" type='button' onclick='copy()'>Copy to Clipboard</button>
+  <button class="btn" type='button' onclick='copy()'>Copy to Clipboard</button>
   <span id='tooltip' class='tooltiptext top'>Copied!</span>
 </div>
 
