@@ -25,21 +25,21 @@ textarea {
 	resize: none;
 	
 	color: rgb(238, 238, 238);
-	background-image: linear-gradient($body-link-color, $body-link-color), linear-gradient(rgb(150, 150, 150), rgb(150, 150, 150));
+	background-image: linear-gradient($body-link-color, $body-link-color), linear-gradient($table-border-color, $table-border-color);
 	background-size: 0px 2px, 100% 1px;
 	background-repeat: no-repeat;
 	background-position: center bottom, center calc(100% - 1px);
 	background-color: rgba(0, 0, 0, 0);
 	transition: background 0.4s ease-out;
-}
 
-textarea:focus {
-	background-size: 100% 2px, 100% 1px;
-	outline: none;
-}
+	&:focus {
+		background-size: 100% 2px, 100% 1px;
+		outline: none;
+	}
 
-textarea::placeholder {
-	color: rgb(100, 100, 100);
+	&::placeholder {
+		color: rgb(100, 100, 100);
+	}
 }
 
 /* Range input */
@@ -50,29 +50,21 @@ input[type="range"] {
 	background: rgb(50, 50, 50);
 	background-image: linear-gradient($body-link-color, $body-link-color);
 	background-repeat: no-repeat;
-}
-input[type="range"]:focus {
-	outline: none;
+	
+	&:focus {
+		outline: none;
+	}
 }
 
-input[type="range"]::-webkit-slider-runnable-track {
-	background: transparent;
-	height: 8px;
-}
+input[type="range"]::-webkit-slider-runnable-track,
 input[type="range"]::-moz-range-track {
 	background: transparent;
 	height: 8px;
 }
 
-input[type="range"]::-webkit-slider-thumb {
-	-webkit-appearance: none;
-	height: 16px;
-	width: 8px;
-	background: $body-link-color;
-	margin-top: -4px;
-	border-radius: 0%;
-}
+input[type="range"]::-webkit-slider-thumb,
 input[type="range"]::-moz-range-thumb {
+	-webkit-appearance: none;
 	height: 16px;
 	width: 8px;
 	background: $body-link-color;
@@ -83,23 +75,10 @@ input[type="range"]::-moz-range-thumb {
 #sliders div {
 	display: inline-flex;
 	margin: 0 10px 0 0;
-}
-#sliders div p {
-	margin-bottom: 6px;
-}
 
-
-
-
-
-
-
-/* Buttons */
-.container {
-	display: flex;
-	width: 100%;
-	align-items: center;
-	justify-content: center;
+	p {
+		margin-bottom: 6px;
+	}
 }
 
 /* Tooltips */
@@ -107,46 +86,25 @@ input[type="range"]::-moz-range-thumb {
 	position: relative;
 	display: inline-flex;
 	white-space: nowrap;
-}
-.tooltip .tooltiptext {
-	position: absolute;
-	z-index: 2;
-	padding: 6px 8px;
-	border-radius: 2px;
-	font-size: 12px;
-	line-height: 12px;
-	font-weight: normal;
-	color: #fff;
-	background: #616161;
-	text-align: center;
-	transition: transform 0.075s ease;
-	transform: translateX(-50%) scale(0.0);
-}
-.tooltip:hover .tooltiptext {
-	transition: transform 0.15s ease;
-	transform: translateX(-50%) scale(1.0);
-}
-.tooltip .top {
-	bottom: 105%;
-	left: 50%;
-	transform: translateX(-50%) scale(0.0);
-}
-.tooltip .bottom {
-	top: 105%;
-	left: 50%;
-	transform: translateX(-50%) scale(0.0);
-}
-
-
-.tooltip .tooltiptext {
-	background: #3BB582;
-}
-.tooltip .top {
-	bottom: 120%;
-}
-.tooltiptext {
-	transform: translateX(-50%) scale(0.0) !important;
-}
-.tooltiptext.active {
-	transform: translateX(-50%) scale(1.0) !important;
+	
+	.tooltiptext {
+		position: absolute;
+		z-index: 2;
+		padding: 6px 8px;
+		border-radius: 2px;
+		font-size: 12px;
+		line-height: 12px;
+		font-weight: normal;
+		color: #fff;
+		background: #3BB582;
+		text-align: center;
+		transition: transform 0.075s ease;
+		top: 120%;
+		left: 50%;
+		transform: translateX(-50%) scale(0.0);
+	}
+	
+	.active {
+		transform: translateX(-50%) scale(1.0) !important;
+	}
 }
