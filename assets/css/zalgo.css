@@ -139,5 +139,5 @@ input[type="range"]::-moz-range-thumb {
 	margin: 0 10px 0 0;
 }
 #sliders div p {
-	margin: 0px;
+	margin-bottom: 6px;
 }
