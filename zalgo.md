@@ -3,12 +3,7 @@ title: "Z̥̖̩᷃᷁ͅa͇̭͡l̮᷂̕g̢̻̎͐o̴̢͖̬ Text Corrupter"
 description: "Dresses up text with combining characters to make it look <span class='accent'>corrupted</span>.<br>The term <span class='accent'>zalgo</span> is coined from <a href='http://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags/1732454#1732454'>this StackOverflow post</a>."
 ---
 
-<link rel="stylesheet" href="/assets/css/zalgo.css">
-
-<div class='container tooltip'>
-  <button class="btn" type='button' onclick='copy()'>Copy to Clipboard</button>
-  <span id='tooltip' class='tooltiptext top'>Copied!</span>
-</div>
+<link rel='stylesheet' href='/assets/css/zalgo.css'>
 
 <form>
   <textarea id='input' rows='5' autofocus placeholder='Type text here...' oninput='update()'></textarea>
@@ -44,6 +39,11 @@ description: "Dresses up text with combining characters to make it look <span cl
   </div>
   <textarea id='output' rows='5' readonly placeholder='Summon zalgo here...'></textarea>
 </form>
+
+<div style='width: 100%' class='center tooltip'>
+  <button class="btn" type='button' onclick='copy()'>Copy to Clipboard</button>
+  <span id='tooltip' class='tooltiptext'>Copied!</span>
+</div>
 
 <script>
 var input = document.getElementById('input')
