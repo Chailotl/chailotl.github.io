@@ -33,12 +33,16 @@ textarea:focus {
 	outline: none;
 }
 
+textarea::placeholder {
+	color: rgb(50, 50, 50);  
+}
+
 /* Range input */
 input[type="range"] {
 	-webkit-appearance: none;
 	height: 8px;
 	width: 194px;
-	background: rgb(100, 100, 100);
+	background: rgb(80, 80, 80);
 	background-image: linear-gradient(rgb(103, 234, 169), rgb(103, 234, 169));
 	background-repeat: no-repeat;
 }
