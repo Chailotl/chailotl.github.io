@@ -7,7 +7,7 @@ input[type="range"] {
 	-webkit-appearance: none;
 	height: 8px;
 	width: 194px;
-	background-image: linear-gradient(rgb(103, 234, 169), rgb(103, 234, 169));
+	background-image: linear-gradient(rgb(19, 136, 92), rgb(19, 136, 92));
 	background-repeat: no-repeat;
 }
 input[type="range"]:focus {
@@ -27,14 +27,14 @@ input[type="range"]::-webkit-slider-thumb {
 	-webkit-appearance: none;
 	height: 16px;
 	width: 8px;
-	background: #00bcd4;
+	background: rgb(103, 234, 169);
 	margin-top: -5px;
 	border-radius: 0%;
 }
 input[type="range"]::-moz-range-thumb {
 	height: 16px;
 	width: 8px;
-	background: #00bcd4;
+	background: rgb(103, 234, 169);
 	margin-top: -5px;
 	border-radius: 0%;
 }
