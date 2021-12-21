@@ -5,9 +5,10 @@
 /* Remove styling */
 input[type="range"] {
 	-webkit-appearance: none;
-	background-image: linear-gradient(rgb(103, 234, 169), rgb(103, 234, 169));
 	height: 8px;
 	width: 194px;
+	background-image: linear-gradient(rgb(103, 234, 169), rgb(103, 234, 169));
+	background-repeat: no-repeat;
 }
 input[type="range"]:focus {
 	outline: none;
