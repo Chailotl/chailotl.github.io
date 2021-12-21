@@ -40,7 +40,9 @@ description: "Dresses up text with combining characters to make it look <span cl
   <textarea id='output' rows='5' readonly placeholder='Summon zalgo here...'></textarea>
 </form>
 
-<button style='margin-bottom: 0' class="btn" type='button' onclick='copy()'>Copy to Clipboard</button>
+<div style="width: 100%" class="center">
+  <button style='margin-bottom: 0' class="btn" type='button' onclick='copy()'>Copy to Clipboard</button>
+</div>
 
 <script>
 var input = document.getElementById('input')
