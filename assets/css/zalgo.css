@@ -14,7 +14,7 @@ textarea {
 	resize: none;
 	
 	color: rgb(238, 238, 238);
-	background-image: linear-gradient(#00bcd4, #00bcd4), linear-gradient(rgb(103, 234, 169), rgb(103, 234, 169));
+	background-image: linear-gradient(rgb(103, 234, 169), rgb(103, 234, 169)), linear-gradient(rgb(150, 150, 150), rgb(150, 150, 150));
 	background-size: 0px 2px, 100% 1px;
 	background-repeat: no-repeat;
 	background-position: center bottom, center calc(100% - 1px);
