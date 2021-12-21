@@ -8,7 +8,8 @@ description: "Dresses up text with combining characters to make it look <span cl
 <div class='container tooltip'>
   <button class="button" type='button' onclick='copy()'>Copy to Clipboard</button>
   <span id='tooltip' class='tooltiptext top'>Copied!</span>
-</div><br>
+</div>
+
 <form>
   <textarea id='input' rows='5' autofocus placeholder='Type text here...' oninput='update()'></textarea>
   <div id='sliders'>
