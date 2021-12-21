@@ -34,7 +34,7 @@ textarea:focus {
 }
 
 textarea::placeholder {
-	color: rgb(50, 50, 50);
+	color: rgb(100, 100, 100);
 }
 
 /* Range input */
