@@ -33,8 +33,14 @@ textarea:focus {
 	outline: none;
 }
 
+textarea::-webkit-input-placeholder {
+	color: rgb(50, 50, 50);
+}
+textarea::-moz-placeholder {
+	color: rgb(50, 50, 50);
+}
 textarea::placeholder {
-	color: rgb(50, 50, 50);  
+	color: rgb(50, 50, 50);
 }
 
 /* Range input */
