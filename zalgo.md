@@ -33,7 +33,7 @@ description: "Dresses up text with combining characters to make it look <span cl
 			<input id='end fuck' type='range' name='end fuck' value='0' min='0' max='1' step='0.01' oninput='update()'>
 		</div>
 		<div style='opacity: 0.5'>
-			<p>Attack</p>
+			<p>Exponent</p>
 			<input id='power fuck' type='range' name='power fuck' value='1' min='1' max='10' step='0.01' oninput='update()'>
 		</div>
 	</div>
