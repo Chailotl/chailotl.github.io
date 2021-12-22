@@ -6,42 +6,42 @@ description: "Dresses up text with combining characters to make it look <span cl
 <link rel='stylesheet' href='/assets/css/zalgo.css'>
 
 <form>
-  <textarea id='input' rows='5' autofocus placeholder='Type text here...' oninput='update()'></textarea>
-  <div id='sliders'>
-    <div class='center'>
-      <p>Up amount</p>
-      <input id='fuck up' type='range' name='fuck up' value='4' min='0' max='30' oninput='update()'>
-    </div>
-    <div class='center'>
-      <p>Middle amount</p>
-      <input id='fuck mid' type='range' name='fuck mid' value='2' min='0' max='24' oninput='update()'>
-    </div>
-    <div class='center'>
-      <p>Down amount</p>
-      <input id='fuck down' type='range' name='fuck down' value='6' min='0' max='30' oninput='update()'>
-    </div>
-    <div class='center'>
-      <p>Sparsity</p>
-      <input id='fuckiness' type='range' name='fuckiness' value='0.5' min='0' max='1' step='0.01' oninput='update()'>
-    </div>
-    <div class='center'>
-      <p>Start point (%)</p>
-      <input id='start fuck' type='range' name='start fuck' value='0' min='0' max='1' step='0.01' oninput='update()'>
-    </div>
-    <div class='center'>
-      <p>End point (%)</p>
-      <input id='end fuck' type='range' name='end fuck' value='0' min='0' max='1' step='0.01' oninput='update()'>
-    </div>
-    <div class='center' style='display: none'>
-      <p>Attack</p>
-      <input id='power fuck' type='range' name='power fuck' value='1' min='1' max='10' step='0.01' oninput='update()'>
-    </div>
-  </div>
-  <textarea id='output' rows='5' readonly placeholder='Summon zalgo here...'></textarea>
+	<textarea id='input' rows='5' autofocus placeholder='Type text here...' oninput='update()'></textarea>
+	<div id='sliders'>
+		<div>
+			<p>Up amount</p>
+			<input id='fuck up' type='range' name='fuck up' value='4' min='0' max='30' oninput='update()'>
+		</div>
+		<div>
+			<p>Middle amount</p>
+			<input id='fuck mid' type='range' name='fuck mid' value='2' min='0' max='24' oninput='update()'>
+		</div>
+		<div>
+			<p>Down amount</p>
+			<input id='fuck down' type='range' name='fuck down' value='6' min='0' max='30' oninput='update()'>
+		</div>
+		<div>
+			<p>Sparsity</p>
+			<input id='fuckiness' type='range' name='fuckiness' value='0.5' min='0' max='1' step='0.01' oninput='update()'>
+		</div>
+		<div>
+			<p>Start point (%)</p>
+			<input id='start fuck' type='range' name='start fuck' value='0' min='0' max='1' step='0.01' oninput='update()'>
+		</div>
+		<div>
+			<p>End point (%)</p>
+			<input id='end fuck' type='range' name='end fuck' value='0' min='0' max='1' step='0.01' oninput='update()'>
+		</div>
+		<div style='opacity: 0.5'>
+			<p>Attack</p>
+			<input id='power fuck' type='range' name='power fuck' value='1' min='1' max='10' step='0.01' oninput='update()'>
+		</div>
+	</div>
+	<textarea id='output' rows='5' readonly placeholder='Summon zalgo here...'></textarea>
 </form>
 
 <div style="width: 100%" class="center">
-  <button style='margin-bottom: 0' class="btn" type='button' onclick='copy()'>Copy to Clipboard</button>
+	<button style='margin-bottom: 0' class="btn" type='button' onclick='copy()'>Copy to Clipboard</button>
 </div>
 
 <script>
@@ -71,84 +71,79 @@ var bottomChar = [790, 791, 792, 793, 796, 797, 798, 799,
 845, 846, 851, 852, 853, 854, 857, 858, 7618, 7626, 7679]
 // 847 is invisible, 8432 is too prominent (mid)
 
-var timer
-
 function random (min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min
+	return Math.floor(Math.random() * (max - min + 1)) + min
 }
 function randomArray (array) {
-  return array[Math.floor((Math.random()*array.length))]
+	return array[Math.floor((Math.random()*array.length))]
 }
 
 function copy () {
-  output.select()
-  output.setSelectionRange(0, 99999)
-  document.execCommand('copy')
-  window.getSelection().removeAllRanges();
-
-  tooltip.classList.add('active')
-  clearTimeout(timer)
-  timer = setTimeout(function(){tooltip.classList.remove('active')}, 1150)
+	output.select()
+	output.setSelectionRange(0, 99999)
+	document.execCommand('copy')
+	window.getSelection().removeAllRanges();
 }
 
 function modifier(val, pos) {
-  var inLen = input.value.length
-  if (pos < inLen * startFuck.value) {
-    val = 0
-  } else if (pos < inLen * endFuck.value) {
-    var len = inLen * endFuck.value - inLen * startFuck.value
-    pos -= inLen * startFuck.value
-    val *= Math.pow(pos / len, powerFuck.value)
-  }
-  val -= random(0, fuckiness.value * val)
-  if (Math.random() > val) {
-    val = 0
-  }
-  return val
+	var inLen = input.value.length
+	if (pos < inLen * startFuck.value) {
+		val = 0
+	} else if (pos < inLen * endFuck.value) {
+		var len = inLen * endFuck.value - inLen * startFuck.value
+		pos -= inLen * startFuck.value
+		val *= Math.pow(pos / len, powerFuck.value)
+	}
+	val -= random(0, fuckiness.value * val)
+	if (Math.random() > val) {
+		val = 0
+	}
+	return val
 }
 
 function update() {
-  if (endFuck.value == 0) { powerFuck.parentElement.style.display = 'none' }
-  else { powerFuck.parentElement.style.display = 'inline-flex' }
+	if (endFuck.value == 0) { powerFuck.parentElement.style.opacity = '0.5' }
+	else { powerFuck.parentElement.style.opacity = '1' }
 
-  var edit = '';
-  for (var i = 0; i < input.value.length; ++i) {
-    edit += input.value[i]
-    var val = modifier(fuckUp.value, i)
-    for (var j = 0; j < val; ++j) {
-      edit += String.fromCharCode(randomArray(topChar))
-    }
-    var used = [] // To prevent duplicates
-    val = modifier(fuckMid.value, i)
-    for (var j = 0; j < val; ++j) {
-      var nextChar = randomArray(middleChar)
-      while (used.indexOf(nextChar) != -1) {
-        nextChar = randomArray(middleChar)
-      }
-      used.push(nextChar)
-      edit += String.fromCharCode(nextChar)
-    }
-    val = modifier(fuckDown.value, i)
-    for (var j = 0; j < val; ++j) {
-      edit += String.fromCharCode(randomArray(bottomChar))
-    }
-  }
-  output.value = edit
+	var edit = '';
+	for (var i = 0; i < input.value.length; ++i) {
+		edit += input.value[i]
+		var val = modifier(fuckUp.value, i)
+		for (var j = 0; j < val; ++j) {
+			edit += String.fromCharCode(randomArray(topChar))
+		}
+		var used = [] // To prevent duplicates
+		val = modifier(fuckMid.value, i)
+		for (var j = 0; j < val; ++j) {
+			var nextChar = randomArray(middleChar)
+			while (used.indexOf(nextChar) != -1) {
+				nextChar = randomArray(middleChar)
+			}
+			used.push(nextChar)
+			edit += String.fromCharCode(nextChar)
+		}
+		val = modifier(fuckDown.value, i)
+		for (var j = 0; j < val; ++j) {
+			edit += String.fromCharCode(randomArray(bottomChar))
+		}
+	}
+	output.value = edit
 }
 
+// Update ranges
 var rangeInputs = document.querySelectorAll('input[type="range"]')
 
 function handleInputChange(e) {
-  let target = e.target
-  var min = target.min
-  var max = target.max
-  var val = target.value
-  
-  target.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%'
+	let target = e.target
+	var min = target.min
+	var max = target.max
+	var val = target.value
+	
+	target.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%'
 }
 
 rangeInputs.forEach(input => {
-  input.addEventListener('input', handleInputChange)
-  handleInputChange({target: input})
+	input.addEventListener('input', handleInputChange)
+	handleInputChange({target: input})
 })
 </script>
