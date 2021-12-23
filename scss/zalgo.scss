@@ -41,6 +41,26 @@ textarea {
 	}
 }
 
+input[type="datetime-local"] {
+	font-family: "Ubuntu", "Helvetica", "Arial", san-serif;
+	font-size: 18px;
+	vertical-align: middle;
+	border: 0;
+	
+	color: rgb(238, 238, 238);
+	background-image: linear-gradient($body-link-color, $body-link-color), linear-gradient($table-border-color, $table-border-color);
+	background-size: 0px 2px, 100% 1px;
+	background-repeat: no-repeat;
+	background-position: center bottom, center calc(100% - 1px);
+	background-color: rgba(0, 0, 0, 0);
+	transition: background 0.4s ease-out;
+
+	&:focus {
+		background-size: 100% 2px, 100% 1px;
+		outline: none;
+	}
+}
+
 /* Range input */
 input[type="range"] {
 	-webkit-appearance: none;
