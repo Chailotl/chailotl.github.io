@@ -35,8 +35,8 @@ function copy() {
 	navigator.clipboard.writeText('<t:' + (Date.parse(time.value) / 1000) + ':' + format.value + '>');
 }
 
-function writeFormat() {
-	switch (format.value) {
+function writeFormat(value) {
+	switch (value) {
 		case 't':
 			return shortTime()
 		case 'T':
