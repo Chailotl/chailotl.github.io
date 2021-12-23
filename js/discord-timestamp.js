@@ -50,7 +50,7 @@ function writeFormat(value) {
 		case 'F':
 			return days[date.getDay()] + ', ' + longDate() + ' ' + shortTime()
 		case 'R':
-			return ''
+			return 'Relative time'
 	}
 }
 
