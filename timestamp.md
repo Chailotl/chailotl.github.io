@@ -34,7 +34,7 @@ description: "Generates interactive timestamps that can be used in <span class='
 
 <div style='display: flex; justify-content: space-around; flex-wrap: wrap;'>
 <input id='time' type='datetime-local' name='time' oninput='update()'>
-<select id='format' name='format' onchange='update()'>
+<select id='format' name='format'>
 	<option value='t'>Short Time</option>
 	<option value='T'>Long Time</option>
 	<option value='d'>Short Date</option>
