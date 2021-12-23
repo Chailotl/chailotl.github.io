@@ -22,7 +22,7 @@ description: "Generates interactive timestamps that can be used in <span class='
 		font-size: 0.9rem;
 	}
 	
-	btn {
+	.btn {
 		margin-top: 8px !important;
 	}
 }
@@ -33,7 +33,7 @@ description: "Generates interactive timestamps that can be used in <span class='
 		padding: 0.75rem 0.2rem;
 	}
 	
-	btn {
+	.btn {
 		margin-top: 8px !important;
 	}
 }
