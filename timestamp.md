@@ -17,19 +17,29 @@ description: "Generates interactive timestamps that can be used in <span class='
 	
 @media screen and (min-width: 42em) and (max-width: 64em) {
 	input, select {
-		padding: 0.6rem 0.9rem;
-	    font-size: 0.9rem;
+		margin-top: 8px !important;
+		padding: 0.6rem 0.2rem;
+		font-size: 0.9rem;
+	}
+	
+	btn {
+		margin-top: 8px !important;
 	}
 }
 	
 @media screen and (min-width: 64em) {
 	input, select {
-		padding: 0.75rem 1rem;
+		margin-top: 8px !important;
+		padding: 0.75rem 0.2rem;
+	}
+	
+	btn {
+		margin-top: 8px !important;
 	}
 }
 </style>
 
-<div style='display: flex; justify-content: space-around; flex-wrap: wrap;'>
+<div style='display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: -8px;'>
 <input id='time' type='datetime-local' name='time' oninput='update()'>
 <select id='format' name='format'>
 	<option value='t'>Short Time</option>
