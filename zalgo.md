@@ -9,31 +9,31 @@ description: "Dresses up text with combining characters to make it look <span cl
 	<textarea id='input' rows='5' autofocus placeholder='Type text here...' oninput='update()'></textarea>
 	<div id='sliders'>
 		<div>
-			<p>Up amount</p>
+			<label for='fuck up'>Up amount</label>
 			<input id='fuck up' type='range' name='fuck up' value='4' min='0' max='30' oninput='update()'>
 		</div>
 		<div>
-			<p>Middle amount</p>
+			<label for='fuck mid'>Middle amount</label>
 			<input id='fuck mid' type='range' name='fuck mid' value='2' min='0' max='24' oninput='update()'>
 		</div>
 		<div>
-			<p>Down amount</p>
+			<label for='fuck down'>Down amount</label>
 			<input id='fuck down' type='range' name='fuck down' value='6' min='0' max='30' oninput='update()'>
 		</div>
 		<div>
-			<p>Sparsity</p>
+			<label for='fuckiness'>Sparsity</label>
 			<input id='fuckiness' type='range' name='fuckiness' value='0.5' min='0' max='1' step='0.01' oninput='update()'>
 		</div>
 		<div>
-			<p>Start point (%)</p>
+			<label for='start fuck'>Start point (%)</label>
 			<input id='start fuck' type='range' name='start fuck' value='0' min='0' max='1' step='0.01' oninput='update()'>
 		</div>
 		<div>
-			<p>End point (%)</p>
+			<label for='end fuck'>End point (%)</label>
 			<input id='end fuck' type='range' name='end fuck' value='0' min='0' max='1' step='0.01' oninput='update()'>
 		</div>
 		<div style='opacity: 0.5'>
-			<p>Exponent</p>
+			<label for='power fuck'>Exponent</label>
 			<input id='power fuck' type='range' name='power fuck' value='1' min='1' max='10' step='0.01' oninput='update()'>
 		</div>
 	</div>
