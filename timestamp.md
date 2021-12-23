@@ -4,7 +4,35 @@ description: "Generates interactive timestamps that can be used in <span class='
 ---
 
 <link rel='stylesheet' href='/scss/zalgo.css'>
+<style>
+@media screen and (max-width: 42em) {
+	input {
+		display: block;
+		width: 100%;
+		padding: 0.75rem;
+	    font-size: 0.9rem;
+	}
+}
+	
+@media screen and (min-width: 42em) and (max-width: 64em) {
+	input {
+		padding: 0.6rem 0.9rem;
+	    font-size: 0.9rem;
+	}
+}
+	
+@media screen and (min-width: 64em) {
+	input {
+		padding: 0.75rem 1rem;
+	}
+}
 
+#id {
+	margin: 16px 0;
+}
+</style>
+
+<div style='display: flex; justify-content: space-around; flex-wrap: wrap;'>
 <input id='time' type='datetime-local' name='time' oninput='update()'>
 <select id='format' name='format' onchange='update()'>
 	<option value='t'>Short Time</option>
@@ -17,5 +45,6 @@ description: "Generates interactive timestamps that can be used in <span class='
 </select>
 <p id='example'></p>
 <button style='margin-bottom: 0' class="btn" type='button' onclick='copy()'>Copy to Clipboard</button>
+</div>
 
 <script src='/js/discord-timestamp.js'></script>
