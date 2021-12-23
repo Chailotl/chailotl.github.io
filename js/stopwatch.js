@@ -2,7 +2,7 @@
 var start = new Date();
 
 function pad(num) {
-	return ("0" + parseInt(num)).substr(-2);
+	return ('0' + parseInt(num)).substr(-2);
 }
 
 // Update the count down every 0.1 second
@@ -16,9 +16,9 @@ var x = setInterval(function() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result
-	var str = minutes + ":" + pad(seconds);
+	var str = minutes + ':' + pad(seconds);
 	if (hours > 0) {
-		str = hours + ":" + pad(minutes) + ":" + pad(seconds);
+		str = hours + ':' + pad(minutes) + ':' + pad(seconds);
 	}
-	document.getElementById("time").innerHTML = str;
+	document.getElementById('time').innerHTML = str;
 }, 100);
