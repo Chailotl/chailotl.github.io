@@ -8,9 +8,10 @@ description: "Generates interactive timestamps that can be used in <span class='
 @media screen and (max-width: 42em) {
 	input, select {
 		display: block;
+		margin-bottom: 8px;
 		width: 100%;
 		padding: 0.75rem;
-	    font-size: 0.9rem;
+		font-size: 0.9rem;
 	}
 }
 	
@@ -25,10 +26,6 @@ description: "Generates interactive timestamps that can be used in <span class='
 	input, select {
 		padding: 0.75rem 1rem;
 	}
-}
-
-#format {
-	margin: 16px 0;
 }
 </style>
 
