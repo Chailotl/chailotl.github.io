@@ -23,7 +23,7 @@ textarea {
 	width: 100%;
 	resize: none;
 	
-	color: rgb(238, 238, 238);
+	color: $body-text-color;
 	background-image: linear-gradient($body-link-color, $body-link-color), linear-gradient($table-border-color, $table-border-color);
 	background-size: 0px 2px, 100% 1px;
 	background-repeat: no-repeat;
@@ -47,7 +47,7 @@ input[type="datetime-local"], select {
 	vertical-align: middle;
 	border: 0;
 	
-	color: rgb(238, 238, 238);
+	color: $body-text-color;
 	background-image: linear-gradient($body-link-color, $body-link-color), linear-gradient($table-border-color, $table-border-color);
 	background-size: 0px 2px, 100% 1px;
 	background-repeat: no-repeat;
@@ -59,6 +59,10 @@ input[type="datetime-local"], select {
 		background-size: 100% 2px, 100% 1px;
 		outline: none;
 	}
+}
+
+option {
+	background-color: rgb(33, 33, 33);
 }
 
 /* Range input */
@@ -111,7 +115,7 @@ input[type="range"]::-moz-range-thumb {
 		align-items: center;
 		margin: 0 5px;
 
-		p {
+		label {
 			margin: 3px 0;
 		}
 	}
