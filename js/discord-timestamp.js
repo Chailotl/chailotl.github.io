@@ -2,6 +2,7 @@
 var time = document.getElementById('time')
 var format = document.getElementById('format')
 var example = document.getElementById('example')
+var options = document.querySelectorAll('option')
 
 var date
 
@@ -34,33 +35,29 @@ function copy() {
 	navigator.clipboard.writeText('<t:' + (Date.parse(time.value) / 1000) + ':' + format.value + '>');
 }
 
-function update() {
-	date = new Date(time.value)
-	var str = ''
-
+function writeFormat() {
 	switch (format.value) {
 		case 't':
-			str = shortTime()
-			break
+			return shortTime()
 		case 'T':
-			str = toTwelveHour() + ':' + pad(date.getMinutes()) + ':' + pad(date.getSeconds()) + ' ' + ampm()
-			break
+			return toTwelveHour() + ':' + pad(date.getMinutes()) + ':' + pad(date.getSeconds()) + ' ' + ampm()
 		case 'd':
-			str = pad(date.getMonth() + 1) + '/' + pad(date.getDate()) + '/' + date.getFullYear()
-			break
+			return pad(date.getMonth() + 1) + '/' + pad(date.getDate()) + '/' + date.getFullYear()
 		case 'D':
-			str = longDate()
-			break
+			return longDate()
 		case 'f':
-			str = longDate() + ' ' + shortTime()
-			break
+			return longDate() + ' ' + shortTime()
 		case 'F':
-			str = days[date.getDay()] + ', ' + longDate() + ' ' + shortTime()
-			break
+			return days[date.getDay()] + ', ' + longDate() + ' ' + shortTime()
 		case 'R':
-			str = ''
-			break
+			return ''
 	}
+}
 
-	example.innerHTML = str
+function update() {
+	date = new Date(time.value)
+	
+	options.forEach(option => {
+		option.innerHTML = writeFormat(option.value)
+	})
 }
