@@ -8,38 +8,31 @@ description: "Generates interactive timestamps that can be used in <span class='
 @media screen and (max-width: 42em) {
 	input, select {
 		display: block;
-		margin-bottom: 8px;
 		width: 100%;
 		padding: 0.75rem;
-		font-size: 0.9rem;
+		font-size: 0.9rem !important;
 	}
 }
 	
 @media screen and (min-width: 42em) and (max-width: 64em) {
 	input, select {
-		margin-top: 8px !important;
-		padding: 0.6rem 0.2rem;
-		font-size: 0.9rem;
-	}
-	
-	.btn {
-		margin-top: 8px !important;
+		padding: 0.6rem 0;
+		font-size: 0.9rem !important;
 	}
 }
 	
 @media screen and (min-width: 64em) {
 	input, select {
-		margin-top: 8px !important;
-		padding: 0.75rem 0.2rem;
+		padding: 0.75rem 0;
 	}
-	
-	.btn {
-		margin-top: 8px !important;
-	}
+}
+
+input, select, .btn {
+	margin-top: 16px !important;
 }
 </style>
 
-<div style='display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: -8px;'>
+<div style='display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: -16px;'>
 <input id='time' type='datetime-local' name='time' oninput='update()'>
 <select id='format' name='format'>
 	<option value='t'>Short Time</option>
