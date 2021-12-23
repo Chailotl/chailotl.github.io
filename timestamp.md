@@ -6,7 +6,7 @@ description: "Generates interactive timestamps that can be used in <span class='
 <link rel='stylesheet' href='/scss/zalgo.css'>
 <style>
 @media screen and (max-width: 42em) {
-	input {
+	input, select {
 		display: block;
 		width: 100%;
 		padding: 0.75rem;
@@ -15,19 +15,19 @@ description: "Generates interactive timestamps that can be used in <span class='
 }
 	
 @media screen and (min-width: 42em) and (max-width: 64em) {
-	input {
+	input, select {
 		padding: 0.6rem 0.9rem;
 	    font-size: 0.9rem;
 	}
 }
 	
 @media screen and (min-width: 64em) {
-	input {
+	input, select {
 		padding: 0.75rem 1rem;
 	}
 }
 
-#id {
+#format {
 	margin: 16px 0;
 }
 </style>
@@ -43,7 +43,7 @@ description: "Generates interactive timestamps that can be used in <span class='
 	<option value='F'>Long Date/Time</option>
 	<option value='R'>Relative Time</option>
 </select>
-<p id='example'></p>
+<!--<p id='example'></p>-->
 <button style='margin-bottom: 0' class="btn" type='button' onclick='copy()'>Copy to Clipboard</button>
 </div>
 
