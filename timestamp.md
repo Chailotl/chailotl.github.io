@@ -18,6 +18,10 @@ description: "Generates interactive timestamps that can be used in <span class='
 		font-size: 0.9rem !important;
 	}
 	
+	.js-Dropdown-list li {
+		padding: 0.375em 0.75em !important;
+	}
+	
 	input, select, .js-Dropdown-title {
 		display: block;
 		width: 100%;
