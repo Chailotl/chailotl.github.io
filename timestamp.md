@@ -50,7 +50,9 @@ input, select, .btn {
 <script src='/js/discord-timestamp.js'></script>
 <script src='/js/vanilla-js-dropdown.min.js'></script>
 <script>
+	import CustomSelect from 'vanilla-js-dropdown';
+	
 	var select = new CustomSelect({
-		elem: 'format',
+		elem: 'format'
 	});
 </scrip>
