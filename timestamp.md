@@ -82,7 +82,7 @@ input, select, .btn, .js-Dropdown {
 	padding: 0.15em;
 }
 .js-Dropdown-list li:hover {
-	background-color: #2b2f31;
+	background-color: #383a3b;
 }
 .js-Dropdown-list li.is-selected {
 	background-color: #464849;
