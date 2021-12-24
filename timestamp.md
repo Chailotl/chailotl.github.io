@@ -23,6 +23,10 @@ description: "Generates interactive timestamps that can be used in <span class='
 }
 	
 @media screen and (min-width: 42em) and (max-width: 64em) {
+	.js-Dropdown {
+		width: 16em !important;
+	}
+	
 	input, select, .js-Dropdown-title {
 		padding: 0.6rem 0;
 		font-size: 0.9rem !important;
