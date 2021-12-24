@@ -32,6 +32,7 @@ input, select, .btn, .js-Dropdown {
 }
 
 .js-Dropdown {
+	position: relative;
 	width: 20em;
 }
 .js-Dropdown-title {
