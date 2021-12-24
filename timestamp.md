@@ -6,6 +6,10 @@ description: "Generates interactive timestamps that can be used in <span class='
 <link rel='stylesheet' href='/scss/zalgo.css'>
 <style>
 @media screen and (max-width: 42em) {
+	.js-Dropdown {
+		width: 100%;
+	}
+	
 	input, select, .js-Dropdown-title {
 		display: block;
 		width: 100%;
