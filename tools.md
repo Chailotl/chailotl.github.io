@@ -3,6 +3,8 @@ title: "Tools"
 description: "A collection of online tools and toys I made."
 ---
 
+[Return to the main page.](https://chailotl.github.io/)
+
 ## [Zalgo Text Corrupter](https://chailotl.github.io/zalgo)
 A tool that dresses up text with combining characters to make it look c̛̠͙̥̣͜o᷊̣̣̣︠͝r̡̬̮͇̙͝ͅr͚͍̻̣͙︠ͅu͙᷊̼̲̰︡p̶͙̫͙̣͖͇t̙᷊͕︠̕e̵̱͎̩̰͎᷊d̡̻̙̗͙̹̯.
 
