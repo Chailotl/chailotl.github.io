@@ -1,8 +1,13 @@
+// Convert select
+var select = new CustomSelect({
+	elem: 'format'
+});
+
 // Select elements
 var time = document.getElementById('time')
 var format = document.getElementById('format')
 var example = document.getElementById('example')
-var options = document.querySelectorAll('option')
+var options = document.querySelectorAll('li')
 
 var date
 
