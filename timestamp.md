@@ -42,14 +42,14 @@ input, select, .btn, .js-Dropdown {
 	text-align: left;
 }
 .js-Dropdown-title:after {
-  border-color: #a5a5a5 transparent transparent transparent;
+  border-color: #a69e93 transparent transparent transparent;
   border-style: solid;
-  border-width: 10px 12px;
+  border-width: 10px 8px;
   content: '';
   display: block;
   height: 0;
   position: absolute;
-  right: 1em;
+  right: 0.3em;
   top: 45%;
   width: 0;
 }
