@@ -6,7 +6,7 @@ description: "Generates interactive timestamps that can be used in <span class='
 <link rel='stylesheet' href='/scss/zalgo.css'>
 <style>
 @media screen and (max-width: 42em) {
-	input, select, .js-Dropdow {
+	input, select, .js-Dropdown {
 		display: block;
 		width: 100%;
 		padding: 0.75rem;
@@ -15,14 +15,14 @@ description: "Generates interactive timestamps that can be used in <span class='
 }
 	
 @media screen and (min-width: 42em) and (max-width: 64em) {
-	input, select, .js-Dropdow {
+	input, select, .js-Dropdown {
 		padding: 0.6rem 0;
 		font-size: 0.9rem !important;
 	}
 }
 	
 @media screen and (min-width: 64em) {
-	input, select, .js-Dropdow {
+	input, select, .js-Dropdown {
 		padding: 0.75rem 0;
 	}
 }
@@ -32,13 +32,14 @@ input, select, .btn, .js-Dropdown {
 }
 
 .js-Dropdown {
-  width: 20em;
+	width: 20em;
 }
 .js-Dropdown-title {
-  padding: 0.5em;
-  position: relative;
-  text-align: left;
-  width: 100%;
+	position: relative;
+	padding: 0;
+	width: 100%;
+	height: 100%
+	text-align: left;
 }
 .js-Dropdown-title:after {
   border-color: #a5a5a5 transparent transparent transparent;
