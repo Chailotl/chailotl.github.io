@@ -63,6 +63,6 @@ function update() {
 	date = new Date(time.value)
 	
 	options.forEach(option => {
-		option.innerHTML = writeFormat(option['data-value'])
+		option.innerHTML = writeFormat(option.dataset.value)
 	})
 }
