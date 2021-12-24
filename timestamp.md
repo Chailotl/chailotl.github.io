@@ -7,7 +7,11 @@ description: "Generates interactive timestamps that can be used in <span class='
 <style>
 @media screen and (max-width: 42em) {
 	.js-Dropdown {
-		width: 100%;
+		width: 100% !important;
+	}
+	
+	.js-Dropdown:after {
+		right: 1.05em;
 	}
 	
 	input, select, .js-Dropdown-title {
