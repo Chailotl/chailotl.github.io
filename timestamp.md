@@ -38,7 +38,7 @@ input, select, .btn, .js-Dropdown {
 	position: relative;
 	padding: 0;
 	width: 100%;
-	height: 100%
+	height: 100%;
 	text-align: left;
 }
 .js-Dropdown-title:after {
