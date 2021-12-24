@@ -11,7 +11,7 @@ description: "Generates interactive timestamps that can be used in <span class='
 	}
 	
 	.js-Dropdown:after {
-		right: 1.05em;
+		right: 1.05em !important;
 	}
 	
 	input, select, .js-Dropdown-title {
