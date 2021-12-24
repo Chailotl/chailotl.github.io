@@ -18,6 +18,9 @@ Built in C# and WPF, MRM is a Minecraft JSON resource manager and data-drive ass
 
 ![](https://i.imgur.com/zEuhoFs.png)
 
+## [Online Tools](https://chailotl.github.io/tools)
+Not a "software" per-say, but here is my collection of online tools I've created thus far. More will be added.
+
 ---
 
 # Mods
@@ -26,18 +29,6 @@ A Unity mod for Risk of Rain 2. It adds a couple of quality of life tweaks that 
 
 ## [Siltbox](https://github.com/Chailotl/siltbox/wiki)
 A Fabric mod for Minecraft. It adds new blocks, items, features, and QoL tweaks that aim to complement and improve the base game.
-
----
-
-# Tools
-## [Stopwatch](https://chailotl.github.io/stopwatch)
-A page that displays a simple stopwatch. Useful for streamers as an AFK stopwatch.
-
-## [Countdown](https://chailotl.github.io/countdown)
-A page that displays a countdown, and displays text when the countdown ends. Useful for streamers as a countdown to when their stream starts.
-
-## [Zalgo](https://chailotl.github.io/zalgo)
-A zalgo text corrupter.
 
 ---
 
