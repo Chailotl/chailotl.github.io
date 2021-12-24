@@ -10,7 +10,7 @@ description: "Generates interactive timestamps that can be used in <span class='
 		width: 100% !important;
 	}
 	
-	.js-Dropdown:after {
+	.js-Dropdown-title:after {
 		right: 1.05em !important;
 	}
 	
