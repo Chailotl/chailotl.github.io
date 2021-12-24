@@ -63,6 +63,9 @@ function update() {
 	date = new Date(time.value)
 	
 	options.forEach(option => {
+		if (option.classList.contains('is-selected')) {
+			option.parentElement.parentElement.firstChild.innerHTML = writeFormat(option.dataset.value)
+		}
 		option.innerHTML = writeFormat(option.dataset.value)
 	})
 }
