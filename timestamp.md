@@ -55,4 +55,4 @@ input, select, .btn {
 	var select = new CustomSelect({
 		elem: 'format'
 	});
-</scrip>
+</script>
