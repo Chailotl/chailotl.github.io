@@ -1,6 +1,6 @@
 ---
 title: "Discord Timestamp Generator"
-description: "Generates interactive timestamps that can be used in <span class='accent'>Discord</span>."
+description: "Generates dynamic timestamps that can be used in <span class='accent'>Discord</span>."
 ---
 
 <link rel='stylesheet' href='/scss/zalgo.css'>
