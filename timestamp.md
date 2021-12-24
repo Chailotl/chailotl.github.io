@@ -55,9 +55,10 @@ input, select, .btn, .js-Dropdown {
   width: 0;
 }
 .js-Dropdown-list {
-  background: #ffffff;
-  border-left: 1px solid #a5a5a5;
-  border-right: 1px solid #a5a5a5;
+	color: #bfc0c0;
+  background: #2a2c2d;
+  border-left: 1px solid #555657;
+  border-right: 1px solid #555657;
   box-sizing: border-box;
   display: none;
   height: 0;
@@ -71,24 +72,24 @@ input, select, .btn, .js-Dropdown {
   z-index: 999;
 }
 .js-Dropdown-list.is-open {
-  display: block;
-  height: auto;
-  opacity: 1;
+	display: block;
+	height: auto;
+	opacity: 1;
 }
 .js-Dropdown-list li {
-  border-bottom: 1px solid #a5a5a5;
-  cursor: pointer;
-  padding: 1em 0.5em;
+	border-bottom: 1px solid #555657;
+	cursor: pointer;
+	padding: 0.15em;
 }
 .js-Dropdown-list li:hover {
-  background-color: #fff5e9;
+	background-color: #2b2f31;
 }
 .js-Dropdown-list li.is-selected {
-  background-color: #ffdfb6;
+	background-color: #464849;
 }
 .js-Dropdown-optgroup {
-  border-bottom: 1px solid #a5a5a5;
-  color: #a5a5a5;
+  border-bottom: 1px solid #555657;
+  color: #555657;
   cursor: default;
   padding: 1em 0.5em;
   text-align: center;
