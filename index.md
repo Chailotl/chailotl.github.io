@@ -1,6 +1,13 @@
 Since middleschool, I've worked on dozens of personal projects spanning C++, C#, Java, Javascript, Node.js, and more.
 
 # Games
+## [PETSCII](https://github.com/Chailotl/petscii)
+[![itch.io](https://img.shields.io/badge/play-itch.io-red)](https://chailotl.itch.io/petscii)
+
+An ASCII adventure about taking care of a mysterious pet!
+
+![](https://i.imgur.com/WSpAJFe.png)
+
 ## Paddle Effect
 A work-in-progress Unity game.
 
