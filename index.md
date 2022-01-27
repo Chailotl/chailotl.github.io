@@ -1,6 +1,6 @@
 Since middleschool, I've worked on dozens of personal projects spanning C++, C#, Java, Javascript, Node.js, and more.
 
-# Games
+# # Games
 ## [PETSCII](https://github.com/Chailotl/petscii)
 [![itch.io](https://img.shields.io/badge/play-itch.io-red)](https://chailotl.itch.io/petscii)
 
@@ -19,18 +19,18 @@ A gamemode for Garry's Mod inspired by the original Fortwars. Currently WIP.
 
 ---
 
-# Software
+# # Software
 ## [Minecraft Resource Manager](https://github.com/Chailotl/minecraft-resource-manager)
 Built in C# and WPF, MRM is a Minecraft JSON resource manager and data-drive asset generator. Its purpose is to make it easy to manage your assets when developing Minecraft mods, as well as automatically generating these assets using a flexible template system.
 
 ![](https://i.imgur.com/zEuhoFs.png)
 
 ## [Online Tools](https://chailotl.github.io/tools)
-Not a "software" per-say, but here is my collection of online tools I've created thus far. More will be added.
+This is a collection of online tools I've made, such as a zalgo text corrupter and a Discord timestamp generator.
 
 ---
 
-# Mods
+# # Mods
 ## [Quality of Rain](https://github.com/Chailotl/quality-of-rain)
 A Unity mod for Risk of Rain 2. It adds a couple of quality of life tweaks that can be toggled on or off.
 
@@ -39,7 +39,7 @@ A Fabric mod for Minecraft. It adds new blocks, items, features, and QoL tweaks 
 
 ---
 
-# Plugins
+# # Plugins
 ## [Mini Golf](https://github.com/Chailotl/mini-golf)
 A Spigot plugin for Minecraft servers. It adds a few mini golf related items to let you play mini golf with your friends.
 
@@ -52,50 +52,12 @@ A Spigot plugin for Minecraft servers. It prevents cheating through the use of m
 ## [Better Pickup](https://github.com/Chailotl/better-pickup)
 A Spigot plugin for Minecraft servers. It improves the item drop system with configurable options such as auto pickup, fast pickup, and more.
 
-## More Spigot Plugins
-<details>
-  <summary>Click to expand</summary>
-  
-### [Colored Books](https://github.com/Chailotl/colored-books/tree/master)
-This simple plugin lets you format signed books with color by replacing § with &.
-
-### [Wowozela](https://github.com/Chailotl/wowozela)
-It adds fretless instruments that change pitch depending on your eye pitch, inspired by the [Garry's Mod Wowozela addon](https://steamcommunity.com/sharedfiles/filedetails/?id=108170491).
-
-### [Tobacco Pipes](https://github.com/Chailotl/tobacco-pipes)
-It adds a tobacco pipe item that can be filled with grass and smoked for that authentic tavern experience.
-
-### [Pet Teleport](https://github.com/Chailotl/pet-teleport)
-The plugin makes your pets teleport with you when using teleport commands.
-
-### [Pet Saver](https://github.com/Chailotl/pet-saver)
-The plugin prevents your pets from being killed.
-
-### [No Friendly Fire](https://github.com/Chailotl/no-friendly-fire)
-It adds a command to toggle friendly fire on your pets.
-
-### [Always Infect](https://github.com/Chailotl/always-infect)
-It makes villagers always turn into a zombie villagers when killed by a zombie.
-
-### [Botanical Replication](https://github.com/Chailotl/botanical-replication)
-It lets you apply bonemeal to small flowers to duplicate them just like large flowers.
-
-### [Picky Trees](https://github.com/Chailotl/picky-trees)
-The plugin makes trees picky about where they grow and prefer their naitive biome.
-
-### [Endermite Parasites](https://github.com/Chailotl/endermite-parasites)
-The plugin makes Endermen drop endermites on death as a simple deterrent to cheesy Endermen farming.
-
-### [Reuseable Ender Pearls](https://github.com/Chailotl/reusable-ender-pearls)
-It adds a stable ender pearl item which can be used unlimited time.
-
-### [Respawn at Home](https://github.com/Chailotl/respawn-at-home)
-It forcibly respawn players at their Essentials home.
-</details>
+## [More Spigot Plugins](https://chailotl.github.io/spigot)
+I have made lots of Spigot plugins, but since most of them are small, I put the rest of them on their own page here.
 
 ---
 
-# Libraries
+# # Libraries
 ## [CraftLib](https://github.com/Chailotl/craft-lib)
 A crafting library for Spigot plugins. It handles custom items in crafting recipes and ensures custom items cannot be used in regular recipes.
 
