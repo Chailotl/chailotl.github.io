@@ -32,6 +32,8 @@ This is a collection of online tools I've made, such as a zalgo text corrupter a
 
 # # Mods
 ## [Quality of Rain](https://github.com/Chailotl/quality-of-rain)
+[![download Thunderstore.io](https://img.shields.io/badge/download-Thunderstore.io-blue)](https://thunderstore.io/package/VanillaChai/Quality_of_Rain/)
+
 A Unity mod for Risk of Rain 2. It adds a couple of quality of life tweaks that can be toggled on or off.
 
 ## [Siltbox](https://github.com/Chailotl/siltbox/wiki)
@@ -39,7 +41,14 @@ A Fabric mod for Minecraft. It adds new blocks, items, features, and QoL tweaks 
 
 ---
 
-# # Plugins
+# # Plugins & Addons
+## [Da Toolbox](https://github.com/Chailotl/da-toolbox)
+[![subscribe Steam Workshop](https://img.shields.io/badge/subscribe-Steam_Workshop-144d80)](https://steamcommunity.com/sharedfiles/filedetails/?id=2479083959)
+
+A Garry's Mod addon that adds a collection of useful tools for building and posing.
+
+![](https://i.imgur.com/nOEowEr.png)
+
 ## [Mini Golf](https://github.com/Chailotl/mini-golf)
 A Spigot plugin for Minecraft servers. It adds a few mini golf related items to let you play mini golf with your friends.
 
