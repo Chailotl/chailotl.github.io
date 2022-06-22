@@ -75,7 +75,7 @@
 
 	converters.forEach(obj => {
 		const el = document.createElement('tr')
-		el.innerHTML = `<td><span>${obj.name}</span></td><td><p id='${obj.name}'></p></td>`
+		el.innerHTML = `<td><span>${obj.name}</span></td><td><span id='${obj.name}'></span></td>`
 		table.appendChild(el)
 
 		obj.element = document.getElementById(obj.name)
