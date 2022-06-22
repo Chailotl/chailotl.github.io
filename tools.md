@@ -11,6 +11,9 @@ A tool that dresses up text with combining characters to make it look c̛̠͙͜�
 ## [Discord Timestamp Generator](https://chailotl.github.io/timestamp)
 A tool to generate interactive timestamps for Discord.
 
+## [Unicode Text Converter](https://chailotl.github.io/unicode)
+A tool to convert plain text into obscure Unicode characters.
+
 ## [Countdown](https://chailotl.github.io/countdown)
 A page that displays a countdown, which then shows custom text when the countdown ends. Useful for streamers as a countdown to when their stream starts.
 
