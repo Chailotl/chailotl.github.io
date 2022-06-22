@@ -6,8 +6,8 @@ description: "Convert plain text into obscure <span class='accent'>Unicode chara
 <link rel='stylesheet' href='/scss/zalgo.css'>
 <style>
 	td {
-		padding: 0.25rem;
-		border: 0;
+		padding: 0.25rem !important;
+		border: 0 !important;
 	}
 </style>
 
