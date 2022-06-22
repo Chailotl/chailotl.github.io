@@ -5,7 +5,7 @@ description: "Convert plain text into obscure <span class='accent'>Unicode chara
 
 <link rel='stylesheet' href='/scss/zalgo.css'>
 
-<textarea id='input' rows='5' autofocus placeholder='Type text here...' oninput='update()'></textarea>
+<textarea id='input' rows='1' autofocus placeholder='Type text here...' oninput='update()'></textarea>
 
 <p>Circled</p>
 <p id='circled'></p>
