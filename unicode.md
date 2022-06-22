@@ -7,7 +7,8 @@ description: "Convert plain text into obscure <span class='accent'>Unicode chara
 
 <textarea id='input' rows='1' autofocus placeholder='Type text here...' oninput='update()'></textarea>
 
-<p>Circled</p>
-<p id='circled'></p>
+<table>
+	<tbody id='table'></tbody>
+</table>
 
 <script src='/js/unicode-converter.js'></script>
