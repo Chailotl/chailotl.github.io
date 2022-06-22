@@ -4,6 +4,12 @@ description: "Convert plain text into obscure <span class='accent'>Unicode chara
 ---
 
 <link rel='stylesheet' href='/scss/zalgo.css'>
+<style>
+	td {
+		padding: 0.25rem;
+		border: 0;
+	}
+</style>
 
 <textarea id='input' rows='1' autofocus placeholder='Type text here...' oninput='update()'></textarea>
 
