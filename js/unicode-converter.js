@@ -2,13 +2,13 @@
 var input = document.getElementById('input')
 var outputs = []
 
-['circled'].forEach((item) =>
+['circled'].forEach(item =>
 {
 	outputs[item] = document.getElementById(item)
 })
 
 function update() {
-	outputs.forEach((item) =>
+	outputs.forEach(item =>
 	{
 		item.value = input.value
 	})
