@@ -1,6 +1,6 @@
 ---
 title: "Unicode Text Converter"
-description: "Convert plain text into obscure <span class='accent'>Unicode characters</span>."
+description: "Convert plain text into obscure <span class='accent'>Unicode</span> characters."
 ---
 
 <link rel='stylesheet' href='/scss/zalgo.css'>
