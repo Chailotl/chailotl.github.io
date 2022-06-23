@@ -163,6 +163,9 @@
 					else if (obj.name == 'Morse') {
 						edit += '/'	
 					}
+					else {
+						edit += ' '
+					}
 				}
 				else if (char >= 65 && char <= 90) {
 					// Uppercase
