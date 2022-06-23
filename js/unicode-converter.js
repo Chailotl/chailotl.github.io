@@ -10,6 +10,10 @@
 			digits: '０１２３４５６７８９'
 		},
 		{
+			name: 'Small Caps',
+			uppercase: 'ᴀʙᴄᴅᴇꜰɢʜɪᴊᴋʟᴍɴᴏᴘqʀꜱᴛᴜᴠᴡxʏᴢ'
+		},
+		{
 			name: 'Circled',
 			lowercase: 'ⓐⓑⓒⓓⓔⓕⓖⓗⓘⓙⓚⓛⓜⓝⓞⓟⓠⓡⓢⓣⓤⓥⓦⓧⓨⓩ',
 			uppercase: 'ⒶⒷⒸⒹⒺⒻⒼⒽⒾⒿⓀⓁⓂⓃⓄⓅⓆⓇⓈⓉⓊⓋⓌⓍⓎⓏ',
@@ -35,8 +39,15 @@
 			digits: '0⑴⑵⑶⑷⑸⑹⑺⑻⑼'
 		},
 		{
-			name: 'Regional Indicator',
-			uppercase: '🇦🇧🇨🇩🇪🇫🇬🇭🇮🇯🇰🇱🇲🇳🇴🇵🇶🇷🇸🇹🇺🇻🇼🇽🇾🇿'
+			name: 'Superscript',
+			lowercase: 'ᵃᵇᶜᵈᵉᶠᵍʰⁱʲᵏˡᵐⁿᵒᵖqʳˢᵗᵘᵛʷˣʸᶻ',
+			uppercase: 'ᴬᴮᶜᴰᴱᶠᴳᴴᴵᴶᴷᴸᴹᴺᴼᴾQᴿˢᵀᵁⱽᵂˣʸᶻ',
+			digits: '⁰¹²³⁴⁵⁶⁷⁸⁹'
+		},
+		{
+			name: 'Subscript',
+			lowercase: 'ₐbcdₑfgₕᵢⱼₖₗₘₙₒₚqᵣₛₜᵤᵥwₓyz',
+			digits: '₀₁₂₃₄₅₆₇₈₉'
 		},
 		{
 			name: 'Math Sans',
@@ -107,6 +118,10 @@
 			lowercase: '𝕒𝕓𝕔𝕕𝕖𝕗𝕘𝕙𝕚𝕛𝕜𝕝𝕞𝕟𝕠𝕡𝕢𝕣𝕤𝕥𝕦𝕧𝕨𝕩𝕪𝕫',
 			uppercase: '𝔸𝔹ℂ𝔻𝔼𝔽𝔾ℍ𝕀𝕁𝕂𝕃𝕄ℕ𝕆ℙℚℝ𝕊𝕋𝕌𝕍𝕎𝕏𝕐ℤ',
 			digits: '𝟘𝟙𝟚𝟛𝟜𝟝𝟞𝟟𝟠𝟡'
+		},
+		{
+			name: 'Regional Indicator',
+			uppercase: '🇦🇧🇨🇩🇪🇫🇬🇭🇮🇯🇰🇱🇲🇳🇴🇵🇶🇷🇸🇹🇺🇻🇼🇽🇾🇿'
 		},
 		{
 			name: 'Braille',
