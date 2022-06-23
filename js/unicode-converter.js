@@ -156,8 +156,13 @@
 			for (var i = 0; i < input.value.length; ++i) {
 				var char = input.value.charCodeAt(i)
 				
-				if (char == 32 && obj.name == 'Fullwidth') {
-					edit += ' '
+				if (char == 32) {
+					if (obj.name == 'Fullwidth') {
+						edit += ' '
+					}
+					else if (obj.name == 'Morse') {
+						edit += '/'	
+					}
 				}
 				else if (char >= 65 && char <= 90) {
 					// Uppercase
@@ -174,6 +179,10 @@
 				}
 				else {
 					edit += input.value[i]
+				}
+				
+				if (obj.name == 'Morse') {
+					edit += ' '
 				}
 			}
 
