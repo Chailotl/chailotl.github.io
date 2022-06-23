@@ -14,6 +14,17 @@
 			uppercase: 'ᴀʙᴄᴅᴇꜰɢʜɪᴊᴋʟᴍɴᴏᴘqʀꜱᴛᴜᴠᴡxʏᴢ'
 		},
 		{
+			name: 'Superscript',
+			lowercase: 'ᵃᵇᶜᵈᵉᶠᵍʰⁱʲᵏˡᵐⁿᵒᵖqʳˢᵗᵘᵛʷˣʸᶻ',
+			uppercase: 'ᴬᴮᶜᴰᴱᶠᴳᴴᴵᴶᴷᴸᴹᴺᴼᴾQᴿˢᵀᵁⱽᵂˣʸᶻ',
+			digits: '⁰¹²³⁴⁵⁶⁷⁸⁹'
+		},
+		{
+			name: 'Subscript',
+			lowercase: 'ₐbcdₑfgₕᵢⱼₖₗₘₙₒₚqᵣₛₜᵤᵥwₓyz',
+			digits: '₀₁₂₃₄₅₆₇₈₉'
+		},
+		{
 			name: 'Circled',
 			lowercase: 'ⓐⓑⓒⓓⓔⓕⓖⓗⓘⓙⓚⓛⓜⓝⓞⓟⓠⓡⓢⓣⓤⓥⓦⓧⓨⓩ',
 			uppercase: 'ⒶⒷⒸⒹⒺⒻⒼⒽⒾⒿⓀⓁⓂⓃⓄⓅⓆⓇⓈⓉⓊⓋⓌⓍⓎⓏ',
@@ -37,17 +48,6 @@
 			lowercase: '⒜⒝⒞⒟⒠⒡⒢⒣⒤⒥⒦⒧⒨⒩⒪⒫⒬⒭⒮⒯⒰⒱⒲⒳⒴⒵',
 			uppercase: '🄐🄑🄒🄓🄔🄕🄖🄗🄘🄙🄚🄛🄜🄝🄞🄟🄠🄡🄢🄣🄤🄥🄦🄧🄨🄩',
 			digits: '0⑴⑵⑶⑷⑸⑹⑺⑻⑼'
-		},
-		{
-			name: 'Superscript',
-			lowercase: 'ᵃᵇᶜᵈᵉᶠᵍʰⁱʲᵏˡᵐⁿᵒᵖqʳˢᵗᵘᵛʷˣʸᶻ',
-			uppercase: 'ᴬᴮᶜᴰᴱᶠᴳᴴᴵᴶᴷᴸᴹᴺᴼᴾQᴿˢᵀᵁⱽᵂˣʸᶻ',
-			digits: '⁰¹²³⁴⁵⁶⁷⁸⁹'
-		},
-		{
-			name: 'Subscript',
-			lowercase: 'ₐbcdₑfgₕᵢⱼₖₗₘₙₒₚqᵣₛₜᵤᵥwₓyz',
-			digits: '₀₁₂₃₄₅₆₇₈₉'
 		},
 		{
 			name: 'Math Sans',
@@ -149,37 +149,26 @@
 		converters.forEach(obj => {
 			var edit = ''
 			for (var i = 0; i < input.value.length; ++i) {
-				var foo = input.value.charCodeAt(i)
-				if (foo >= 65 && foo <= 90) {
-					foo -= 65;
-
-					if (obj.uppercase)
-					{
-						edit += [...obj.uppercase][foo];
-					}
-					else if (obj.lowercase)
-					{
-						edit += [...obj.lowercase][foo];
-					}
+				var char = input.value.charCodeAt(i)
+				
+				if (char == 32 && obj.name == 'Fullwidth') {
+					edit += ' '
 				}
-				else if (foo >= 97 && foo <= 122) {
-					foo -= 97;
-
-					if (obj.lowercase)
-					{
-						edit += [...obj.lowercase][foo];
-					}
-					else if (obj.uppercase)
-					{
-						edit += [...obj.uppercase][foo];
-					}
+				else if (char >= 65 && char <= 90) {
+					// Uppercase
+					var letters = obj.uppercase ? obj.uppercase : obj.lowercase
+					edit += [...letters][char - 65]
 				}
-				else if (obj.digits && foo >= 48 && foo <= 57) {
-					edit += [...obj.digits][foo - 48];
+				else if (char >= 97 && char <= 122) {
+					// Lowercase
+					var letters = obj.lowercase ? obj.lowercase : obj.uppercase
+					edit += [...letters][char - 97]
 				}
-				else
-				{
-					edit += input.value[i];
+				else if (obj.digits && char >= 48 && char <= 57) {
+					edit += [...obj.digits][char - 48]
+				}
+				else {
+					edit += input.value[i]
 				}
 			}
 
