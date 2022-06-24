@@ -6,22 +6,22 @@ var imageURL = document.getElementById('image url')
 var redirectURL = document.getElementById('redirect url')
 
 function copy () {
-	var str = 'https://chailotl.github.io/embed/?'
+	var str = 'https://embed.chailotl.workers.dev/?'
 	
 	if (author.value) {
-		str += 'author=' + author.value + '&'
+		str += 'a=' + author.value + '&'
 	}
 	if (title.value) {
-		str += 'title=' + title.value + '&'
+		str += 't=' + title.value + '&'
 	}
 	if (description.value) {
-		str += 'desc=' + description.value + '&'
+		str += 'd=' + description.value + '&'
 	}
 	if (imageURL.value) {
-		str += 'image=' + imageURL.value + '&'
+		str += 'i=' + imageURL.value + '&'
 	}
 	if (redirectURL.value) {
-		str += 'redirect=' + redirectURL.value + '&'
+		str += 'r=' + redirectURL.value + '&'
 	}
 	
 	str = str.substring(0, str.length - 1)
