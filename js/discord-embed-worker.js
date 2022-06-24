@@ -1,3 +1,4 @@
+// This is the serverless Javascript running at embed.chailotl.workers.dev
 addEventListener("fetch", (event) => {
   event.respondWith(
     handleRequest(event.request).catch(
