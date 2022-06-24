@@ -22,7 +22,7 @@ function copy () {
 		str += 'd=' + description.value + '&'
 	}
 	if (imageURL.value) {
-		str += 'i=' + imageURL.value + '&'
+		str += 'i=' + encodeURI(imageURL.value) + '&'
 	}
 	if (redirectURL.value) {
 		str += 'r=' + redirectURL.value + '&'
