@@ -6,8 +6,8 @@ description: "Generates an embeddable link that can be used in <span class='acce
 <link rel='stylesheet' href='/scss/zalgo.css'>
 
 <form>
-	<label for='website name'>Website Name</label>
-	<textarea id='website name' rows='1' name='website name'></textarea>
+	<label for='website'>Website Name</label>
+	<textarea id='website' rows='1' name='website'></textarea>
 	
 	<label for='author'>Author Text</label>
 	<textarea id='author' rows='1' name='author'></textarea>
