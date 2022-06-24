@@ -23,7 +23,7 @@ function copy () {
 		str += 'd=' + description.value + '&'
 	}
 	if (color.value) {
-		str += 'c=' + color.value + '&'
+		str += 'c=' + color.value.substring(1) + '&'
 	}
 	if (imageURL.value) {
 		str += 'i=' + encodeURI(imageURL.value) + '&'
