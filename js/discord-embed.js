@@ -11,16 +11,16 @@ function copy () {
 	var str = 'https://embed.chailotl.workers.dev/?'
 	
 	if (website.value) {
-		str += 'w=' + website.value + '&'
+		str += 'w=' + encodeURI(website.value) + '&'
 	}
 	if (author.value) {
-		str += 'a=' + author.value + '&'
+		str += 'a=' + encodeURI(author.value) + '&'
 	}
 	if (title.value) {
-		str += 't=' + title.value + '&'
+		str += 't=' + encodeURI(title.value) + '&'
 	}
 	if (description.value) {
-		str += 'd=' + description.value + '&'
+		str += 'd=' + encodeURI(description.value) + '&'
 	}
 	if (color.value && color.value != '#000000') {
 		str += 'c=' + color.value.substring(1) + '&'
