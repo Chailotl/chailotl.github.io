@@ -6,11 +6,14 @@ description: "Generates an embeddable link that can be used in <span class='acce
 <link rel='stylesheet' href='/scss/zalgo.css'>
 
 <form>
-	<label for='author text'>Author Text</label>
-	<textarea id='author text' rows='1' name='author text'></textarea>
+	<label for='website name'>Website Name</label>
+	<textarea id='website name' rows='1' name='website name'></textarea>
 	
-	<label for='title text'>Title Text</label>
-	<textarea id='title text' rows='1' name='title text'></textarea>
+	<label for='author'>Author Text</label>
+	<textarea id='author' rows='1' name='author'></textarea>
+	
+	<label for='title'>Title Text</label>
+	<textarea id='title' rows='1' name='title'></textarea>
 	
 	<label for='description'>Description</label>
 	<textarea id='description' rows='3' name='description'></textarea>
