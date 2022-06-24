@@ -19,7 +19,7 @@ description: "Generates an embeddable link that can be used in <span class='acce
 	<textarea id='description' rows='3' name='description'></textarea>
 	
 	<label for='color'>Sidebar Color</label>
-	<input type='color' id='color' name='color' value='#b09cfd'>
+	<input type='color' id='color' name='color'>
 	
 	<label for='image url'>Image URL</label>
 	<textarea id='image url' rows='1' name='image url'></textarea>
