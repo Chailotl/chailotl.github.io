@@ -61,7 +61,7 @@ async function handleRequest(request) {
   if (r) {
     str += `<script>window.location = '${decodeURI(r)}'</script>`
   } else {
-    return Response.redirect('https://chailotl.github.io/embed', 301);
+    str += `<script>window.location = 'https://chailotl.github.io/embed'</script>`
   }
 
   return new Response(str, {
