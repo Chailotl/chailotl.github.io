@@ -1,6 +1,7 @@
 // Select elements
-var author = document.getElementById('author text')
-var title = document.getElementById('title text')
+var website = document.getElementById('website')
+var author = document.getElementById('author')
+var title = document.getElementById('title')
 var description = document.getElementById('description')
 var imageURL = document.getElementById('image url')
 var redirectURL = document.getElementById('redirect url')
@@ -8,6 +9,9 @@ var redirectURL = document.getElementById('redirect url')
 function copy () {
 	var str = 'https://embed.chailotl.workers.dev/?'
 	
+	if (website.value) {
+		str += 'w=' + website.value + '&'
+	}
 	if (author.value) {
 		str += 'a=' + author.value + '&'
 	}
