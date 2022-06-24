@@ -1,6 +1,6 @@
 ---
 title: "Discord Embed Generator"
-description: "Generates an embeddable link that can be used in <span class='accent'>Discord</span>.<br>Use this tool <span class='accent'>at your own risk</span>."
+description: "Generates an embeddable link that can be used in <span class='accent'>Discord</span>. <br>Use this tool <span class='accent'>at your own risk</span>."
 ---
 
 <link rel='stylesheet' href='/scss/zalgo.css'>
