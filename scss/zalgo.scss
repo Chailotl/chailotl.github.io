@@ -44,9 +44,8 @@ textarea, input[type="text"], input[type="color"] {
 input[type="color"] {
 	height: 50px;
 	
-	&::-moz-color-swatch {
-		border-radius: 0;
-		border-style: none;
+	&::-webkit-color-swatch {
+		border: none;
 	}
 }
 
