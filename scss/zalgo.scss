@@ -14,7 +14,7 @@
 }
 
 /* Text area */
-textarea, input[type="text"] {
+textarea, input[type="text"], input[type="color"] {
 	font-family: "Ubuntu", "Helvetica", "Arial", san-serif;
 	font-size: 18px;
 	vertical-align: middle;
@@ -41,7 +41,11 @@ textarea, input[type="text"] {
 	}
 }
 
-input[type="datetime-local"], select, .js-Dropdown-title, input[type="color"] {
+input[type="color"] {
+	height: 52px;
+}
+
+input[type="datetime-local"], select, .js-Dropdown-title {
 	font-family: "Ubuntu", "Helvetica", "Arial", san-serif;
 	font-size: 18px;
 	vertical-align: middle;
