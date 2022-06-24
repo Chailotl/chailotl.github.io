@@ -1,6 +1,6 @@
 ---
 title: "Z̥̖̩᷃᷁ͅa͇̭͡l̮᷂̕g̢̻̎͐o̴̢͖̬ Text Corrupter"
-description: "Dresses up text with combining characters to make it look <span class='accent'>corrupted</span>.<br>The term <span class='accent'>zalgo</span> is coined from <a href='http://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags/1732454#1732454'>this StackOverflow post</a>."
+description: "Dresses up text with combining characters to make it look <span class='accent'>corrupted</span>. <br>The term <span class='accent'>zalgo</span> is coined from <a href='http://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags/1732454#1732454'>this StackOverflow post</a>."
 ---
 
 <link rel='stylesheet' href='/scss/zalgo.css'>
