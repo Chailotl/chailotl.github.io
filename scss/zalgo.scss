@@ -43,10 +43,9 @@ textarea, input[type="text"], input[type="color"] {
 
 input[type="color"] {
 	height: 50px;
-	
-	&::-webkit-color-swatch {
-		border: none;
-	}
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
 }
 
 input[type="datetime-local"], select, .js-Dropdown-title {
