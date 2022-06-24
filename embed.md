@@ -11,6 +11,15 @@ description: "Generates an embeddable link that can be used in <span class='acce
 	
 	<label for='title text'>Title Text</label>
 	<textarea id='title text' rows='1' name='title text'></textarea>
+	
+	<label for='description'>Description</label>
+	<textarea id='description' rows='3' name='description'></textarea>
+	
+	<label for='image url'>Image URL</label>
+	<textarea id='image url' rows='1' name='image url'></textarea>
+	
+	<label for='redirect url'>Redirect URL</label>
+	<textarea id='redirect url' rows='1' name='redirect url'></textarea>
 </form>
 
 <div style='width: 100%' class='center'>
