@@ -7,10 +7,10 @@ description: "Generates an embeddable link that can be used in <span class='acce
 
 <form>
 	<label for='author text'>Author Text</label>
-	<input id='author text' type='text' name='author text'>
+	<textarea id='author text' rows='1' name='author text'>
 	
 	<label for='title text'>Title Text</label>
-	<input id='title text' type='text' name='title text'>
+	<textarea id='title text' rows='1' name='title text'>
 </form>
 
 <div style='width: 100%' class='center'>
