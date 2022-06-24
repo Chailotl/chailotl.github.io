@@ -17,4 +17,4 @@ description: "Generates an embeddable link that can be used in <span class='acce
 	<button style='margin-bottom: 0' class='btn' type='button' onclick='copy()'>Copy to Clipboard</button>
 </div>
 
-<script src='/js/embed.js'></script>
+<script src='/js/discord-embed.js'></script>
