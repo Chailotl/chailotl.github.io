@@ -22,7 +22,7 @@ function copy () {
 	if (description.value) {
 		str += 'd=' + description.value + '&'
 	}
-	if (color.value && color.value != '000000') {
+	if (color.value && color.value != '#000000') {
 		str += 'c=' + color.value.substring(1) + '&'
 	}
 	if (imageURL.value) {
