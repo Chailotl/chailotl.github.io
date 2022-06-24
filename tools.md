@@ -11,6 +11,9 @@ A tool that dresses up text with combining characters to make it look c̛̠͙͜�
 ## [Discord Timestamp Generator](https://chailotl.github.io/timestamp)
 A tool to generate interactive timestamps for Discord.
 
+## [Discord Embed Generator](https://chailotl.github.io/embed)
+A tool to generate embeddable links for Discord.
+
 ## [Unicode Text Converter](https://chailotl.github.io/unicode)
 A tool to convert plain text into obscure Unicode characters.
 
