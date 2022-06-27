@@ -1,9 +1,4 @@
-function test() {
-	alert('hello world')
-}
-
 // Import modules
-//import { saveAs } from "https://cdn.skypack.dev/save-as@0.1.8";
 import { Vtf, VtfImageResource, Frame } from 'https://cdn.jsdelivr.net/gh/koerismo/vtf.js/dist/module/VtfContainer.js';
 
 // Select all elements
@@ -17,8 +12,7 @@ input.oninput = () => {
 	fr.readAsDataURL(input.files[0])
 	
 	var resource = new VtfImageResource([new Frame(image)])
+	var vtf = new Vtf([image.width, image.height], [resource], 'DXT5')
 	
-	var vtf = new Vtf([img.width, img.height], [resource], 'DXT5')
 	window.saveAs(vtf.blob(), 'spray.vtf')
-	//saveAs( vtf.blob(), 'spray.vtf')
 }
