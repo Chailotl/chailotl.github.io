@@ -1,6 +1,6 @@
 // Import modules
 //import { saveAs } from "https://cdn.skypack.dev/save-as@0.1.8";
-import { Vtf, VtfImageResource, Frame } from 'https://cdn.jsdelivr.net/gh/koerismo/vtf.js@latest/vtf.js';
+import { Vtf, VtfImageResource, Frame } from 'https://cdn.jsdelivr.net/gh/koerismo/vtf.js/dist/module/Main.js';
 
 // Select all elements
 var input = document.getElementById('input')
@@ -17,5 +17,6 @@ function save () {
 	])
 	
 	var vtf = new Vtf([img.width, img.height], [resource], 'DXT5')
-	saveAs( vtf.blob(), 'spray.vtf')
+	window.saveAs(vtf.blob(), 'spray.vtf')
+	//saveAs( vtf.blob(), 'spray.vtf')
 }
