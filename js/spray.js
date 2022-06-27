@@ -13,7 +13,7 @@ input.oninput = () => {
 	fr.readAsDataURL(input.files[0])
 	
 	var resource = new VtfImageResource([new Frame(image)])
-	var vtf = new Vtf([image.width, image.height], [resource], 'DXT5')
+	var vtf = new Vtf([image.width, image.height], [resource], 'DXT1')
 	
 	window.saveAs(vtf.blob(), 'spray.vtf')
 }
