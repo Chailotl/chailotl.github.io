@@ -1,5 +1,5 @@
 // Import modules
-import { Vtf, VtfImageResource, Frame, Color } from 'https://cdn.jsdelivr.net/gh/koerismo/vtf.js/dist/module/VtfContainer.js';
+import { Vtf, VtfImageResource, Frame } from 'https://cdn.jsdelivr.net/gh/koerismo/vtf.js/dist/module/VtfContainer.js';
 import { VtfDxtEncodings } from 'https://cdn.jsdelivr.net/gh/koerismo/vtf.js/dist/module/VtfDxtEncodings.js';
 
 // Select all elements
