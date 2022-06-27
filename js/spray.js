@@ -1,3 +1,7 @@
+function test() {
+	alert('hello world')
+}
+
 // Import modules
 //import { saveAs } from "https://cdn.skypack.dev/save-as@0.1.8";
 import { Vtf, VtfImageResource, Frame } from 'https://cdn.jsdelivr.net/gh/koerismo/vtf.js/dist/module/VtfContainer.js';
