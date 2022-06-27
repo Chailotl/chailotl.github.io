@@ -9,7 +9,7 @@ var image = new Image();
 var fr = new FileReader()
 fr.onload = () => { image.src = fr.result }
 
-function save() {
+function save () {
 	fr.readAsDataURL(input.files[0])
 	
 	var resource = new VtfImageResource([
