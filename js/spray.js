@@ -1,7 +1,9 @@
 // Import modules
 import { Vtf, VtfImageResource, Frame } from 'https://cdn.jsdelivr.net/gh/koerismo/vtf.js/dist/module/VtfContainer.js';
+import { VtfEncodings } from 'https://cdn.jsdelivr.net/gh/koerismo/vtf.js/dist/module/VtfEncodings.js';
 import { VtfDxtEncodings } from 'https://cdn.jsdelivr.net/gh/koerismo/vtf.js/dist/module/VtfDxtEncodings.js';
 
+Vtf.registerCodec(VtfDxtEncodings.RGBA8888)
 Vtf.registerCodec(VtfDxtEncodings.DXT1)
 
 // Select all elements
