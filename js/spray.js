@@ -5,7 +5,7 @@ import { Vtf, VtfImageResource, Frame } from 'https://cdn.jsdelivr.net/gh/koeris
 // Select all elements
 var input = document.getElementById('input')
 
-function saveSpray() {\
+function saveSpray() {
 	var image = new Image();
 	var fr = new FileReader()
 	
