@@ -9,7 +9,7 @@ function test() {
 // Select all elements
 var input = document.getElementById('input')
 
-function saveSpray() {
+input.oninput = () => {
 	alert('saveSpray')
 	/*var image = new Image()
 	var fr = new FileReader()
@@ -24,4 +24,4 @@ function saveSpray() {
 	//saveAs( vtf.blob(), 'spray.vtf')
 }
 
-input.addEventListener('oninput', saveSpray)
+//input.addEventListener('oninput', saveSpray)
