@@ -35,4 +35,6 @@ function copy () {
 	str = str.substring(0, str.length - 1)
 	
 	navigator.clipboard.writeText(str)
+	
+	console.log('https://embed.chailotl.workers.dev/?z=' + LZString.compressToEncodedURIComponent(str.substring(36)))
 }
