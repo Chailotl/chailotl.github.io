@@ -1,6 +1,6 @@
 // Import modules
 //import { saveAs } from "https://cdn.skypack.dev/save-as@0.1.8";
-import { Vtf, VtfImageResource, Frame } from 'https://cdn.jsdelivr.net/gh/koerismo/vtf.js/dist/module/Main.js';
+import { Vtf, VtfImageResource, Frame } from 'https://cdn.jsdelivr.net/gh/koerismo/vtf.js/dist/module/VtfContainer.js';
 
 // Select all elements
 var input = document.getElementById('input')
