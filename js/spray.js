@@ -1,5 +1,5 @@
 // Import modules
-import { saveAs } from "https://cdn.skypack.dev/save-as@0.1.8";
+//import { saveAs } from "https://cdn.skypack.dev/save-as@0.1.8";
 import { Vtf, VtfImageResource, Frame } from 'https://cdn.jsdelivr.net/gh/koerismo/vtf.js@latest/vtf.js';
 
 // Select all elements
