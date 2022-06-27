@@ -32,5 +32,4 @@ description: "Generates an embeddable link that can be used in <span class='acce
 	<button style='margin-bottom: 0' class='btn' type='button' onclick='copy()'>Copy to Clipboard</button>
 </div>
 
-<script src='https://cdn.jsdelivr.net/gh/pieroxy/lz-string/libs/lz-string.min.js'></script>
 <script src='/js/discord-embed.js'></script>
