@@ -22,3 +22,5 @@ function saveSpray() {
 	window.saveAs(vtf.blob(), 'spray.vtf')
 	//saveAs( vtf.blob(), 'spray.vtf')
 }
+
+input.addEventListener("oninput", saveSpray)
