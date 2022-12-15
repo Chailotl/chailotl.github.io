@@ -11,7 +11,7 @@ fetch('/js/words.txt')
 
 function update() {
 	// Filter input
-	known.value = known.value.toUpperCase().replace(/[^a-zA-Z ]/g, '')
+	known.value = known.value.toUpperCase().replace(/[^a-zA-Z _]/g, '').replace(' ', '_')
 	include.value = include.value.toUpperCase().replace(/[^a-zA-Z]/g, '')
 	exclude.value = exclude.value.toUpperCase().replace(/[^a-zA-Z]/g, '')
 	
@@ -25,8 +25,7 @@ function update() {
 		var str = known.value.toLowerCase()
 		var value = true;
 		for (var i = 0; i < str.length; ++i) {
-			console.log(word[i] + ' ' + str[i])
-			if (str[i] != ' ' && word[i] != str[i]) {
+			if (str[i] != '_' && word[i] != str[i]) {
 				value = false
 				break
 			}
