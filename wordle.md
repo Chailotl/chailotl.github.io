@@ -6,6 +6,9 @@ description: "Quickly and easily find words for <span class='accent'>Wordle</spa
 <link rel='stylesheet' href='/scss/zalgo.css'>
 
 <form>
+	<label for='include'>Known Letters</label>
+	<textarea id='known' rows='1' maxlength='5' oninput='update()'></textarea>
+	
 	<label for='include'>Include Letters</label>
 	<textarea id='include' rows='1' oninput='update()'></textarea>
 	
