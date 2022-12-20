@@ -17,7 +17,7 @@ A tool to generate interactive timestamps for Discord.
 ## [Discord Embed Generator](https://chailotl.github.io/embed)
 A tool to generate embeddable links for Discord.
 
-## [Wordle Solver]([https://chailotl.github.io/embed](https://chailotl.github.io/wordle))
+## [Wordle Solver](https://chailotl.github.io/wordle)
 A tool to find words for Wordle.
 
 ## [Countdown](https://chailotl.github.io/countdown)
