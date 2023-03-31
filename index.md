@@ -8,14 +8,14 @@ An ASCII adventure about taking care of a mysterious pet!
 
 ![](https://i.imgur.com/WSpAJFe.png)
 
-## Paddle Effect
+<!--## Paddle Effect
 A work-in-progress Unity game.
 
 ## [Railway Relaxo](https://github.com/Chailotl/railway-relaxo)
 A casual train logistics manager built in Unity. Currently WIP.
 
 ## [Fortwards Redux](https://github.com/Chailotl/fortwars-redux)
-A gamemode for Garry's Mod inspired by the original Fortwars. Currently WIP.
+A gamemode for Garry's Mod inspired by the original Fortwars. Currently WIP.-->
 
 ---
 
