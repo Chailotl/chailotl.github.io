@@ -28,7 +28,7 @@ Built in C# and WPF, MRM is a Minecraft JSON resource manager and data-drive ass
 ## [Online Tools](https://chailotl.github.io/tools)
 This is a collection of online tools I've made, such as a zalgo text corrupter and a Discord timestamp generator.
 
-## [muninn]([https://chailotl.github.io/tools](https://github.com/Chailotl/muninn))
+## [muninn](https://github.com/Chailotl/muninn)
 A hackable automation system that uses agents and events.
 
 ---
