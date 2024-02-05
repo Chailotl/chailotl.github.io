@@ -32,7 +32,7 @@ function update() {
 	}
 
 	if (!empty) {
-		container.appendChild(clone.cloneNode())
+		container.appendChild(clone.cloneNode(true))
 	}
 	
 	output.value = text
