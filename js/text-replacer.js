@@ -1,6 +1,8 @@
 // Select all elements
-var input = document.getElementById('input')
-var output = document.getElementById('output')
+const input = document.getElementById('input')
+const output = document.getElementById('output')
+const find = document.getElementById('find')
+const replace = document.getElementById('replace')
 
 function copy() {
 	output.select()
@@ -9,7 +11,9 @@ function copy() {
 }
 
 function update() {
-  var edit = '';
-  
-	output.value = edit
+	let text = input.value;
+
+	text = text.replace(find.value, replace.value)
+	
+	output.value = text
 }
