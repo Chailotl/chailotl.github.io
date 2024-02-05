@@ -5,24 +5,24 @@ description: "Perform multiple <span class='accent'>text replacements</span> at 
 
 <link rel='stylesheet' href='/scss/zalgo.css'>
 <style>
-	.text-replacer {
+	.rule {
 		display: flex;
 		gap: 16px;
 	}
 
-	.text-replacer > * {
+	.rule > * {
 		margin: 16px 0 !important;
 	}
 
- 	.text-replacer label {
+ 	.rule label {
 		white-space: nowrap;
 	}
 </style>
 
 <form>
 	<textarea id='input' rows='5' autofocus placeholder='Type text here...' oninput='update()'></textarea>
-	<div>
-		<div class='text-replacer'>
+	<div id='text-replacers'>
+		<div class='rule'>
 			<input class='find' type='text' placeholder='Find' oninput='update()'>
 			<input class='replace' type='text' placeholder='Replace' oninput='update()'>
 			<label for='regex'>Use RegEx</label>
