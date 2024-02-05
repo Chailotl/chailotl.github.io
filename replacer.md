@@ -9,8 +9,8 @@ description: "Perform multiple <span class='accent'>text replacements</span> at 
 	<textarea id='input' rows='5' autofocus placeholder='Type text here...' oninput='update()'></textarea>
 	<div id='text-replacers'>
 		<div>
-			<input class='find' type='text' placeholder='Find' oninput='update()'>
-			<input class='replace' type='text' placeholder='Replace' oninput='update()'>
+			<input id='find' type='text' placeholder='Find' oninput='update()'>
+			<input id='replace' type='text' placeholder='Replace' oninput='update()'>
 		</div>
 	</div>
 	<textarea id='output' rows='5' readonly placeholder='Output here...'></textarea>
