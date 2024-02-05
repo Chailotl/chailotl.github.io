@@ -10,7 +10,7 @@ description: "Perform multiple <span class='accent'>text replacements</span> at 
 		gap: 16px;
 	}
 
-	.text-replacer input {
+	.text-replacer > * {
 		margin: 16px 0 !important;
 	}
 
