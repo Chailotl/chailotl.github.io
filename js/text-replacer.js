@@ -21,6 +21,10 @@ function update() {
 		let regex = rule.getElementsByClassName('regex')[0].checked
 
 		if (find == '' && replace == '') {
+			if (empty) {
+				rule.remove()
+				continue
+			}
 			empty = true
 		}
 
