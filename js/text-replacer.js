@@ -19,7 +19,7 @@ function update() {
 		let replace = replacer.getElementsByClassName('replace')[0].value
 		let regex = replacer.getElementsByClassName('regex')[0].checked
 
-		if (find == '' && replace = '') {
+		if (find == '' && replace == '') {
 			empty = true
 		}
 
