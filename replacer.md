@@ -13,6 +13,10 @@ description: "Perform multiple <span class='accent'>text replacements</span> at 
 	.step > input {
 		margin: 16px 0;
 	}
+
+ 	.step > label {
+		white-space: nowrap;
+	}
 </style>
 
 <form>
@@ -21,8 +25,10 @@ description: "Perform multiple <span class='accent'>text replacements</span> at 
 		<div class='step'>
 			<input type='text' name='find' placeholder='Find' oninput='update()'>
 			<input type='text' name='replace' placeholder='Replace' oninput='update()'>
-			<label for='regex'>Use RegEx</label>
-			<input type='checkbox' name='regex' oninput='update()'>
+			<div>
+				<label for='regex'>Use RegEx</label>
+				<input type='checkbox' name='regex' oninput='update()'>
+			</div>
 		</div>
 	</div>
 	<textarea id='output' rows='5' readonly placeholder='Output here...'></textarea>
