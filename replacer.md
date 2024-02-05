@@ -9,7 +9,7 @@ description: "Perform multiple <span class='accent'>text replacements</span> at 
 		display: flex;
 	}
 
-	.step input {
+	.step > input {
 		margin: 16px 0;
 	}
 </style>
