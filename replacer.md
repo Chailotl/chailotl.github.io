@@ -10,11 +10,11 @@ description: "Perform multiple <span class='accent'>text replacements</span> at 
 		gap: 16px;
 	}
 
-	.step input {
+	.text-replacer input {
 		margin: 16px 0 !important;
 	}
 
- 	.step label {
+ 	.text-replacer label {
 		white-space: nowrap;
 	}
 </style>
@@ -22,7 +22,7 @@ description: "Perform multiple <span class='accent'>text replacements</span> at 
 <form>
 	<textarea id='input' rows='5' autofocus placeholder='Type text here...' oninput='update()'></textarea>
 	<div id='text-replacers'>
-		<div class='step'>
+		<div class='text-replacer'>
 			<input type='text' name='find' placeholder='Find' oninput='update()'>
 			<input type='text' name='replace' placeholder='Replace' oninput='update()'>
 			<label for='regex'>Use RegEx</label>
