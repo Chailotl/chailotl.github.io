@@ -1,8 +1,8 @@
 // Select all elements
 const input = document.getElementById('input')
 const output = document.getElementById('output')
-const replacers = document.getElementById('text-replacers')
-let rules = document.getElementsByClassName('text-replacers')
+const container = document.getElementById('text-replacers')
+let rules = document.getElementsByClassName('rule')
 const clone = rules[0].cloneNode(true)
 
 function copy() {
@@ -32,7 +32,7 @@ function update() {
 	}
 
 	if (!empty) {
-		replacers.appendChild(clone.cloneNode())
+		container.appendChild(clone.cloneNode())
 	}
 	
 	output.value = text
