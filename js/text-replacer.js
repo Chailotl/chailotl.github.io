@@ -18,7 +18,7 @@ function update() {
 		let regex = replacer.getElementsByClassName('regex')[0].value
 
 		if (regex) {
-			find = new RegExp(find);
+			find = new RegExp(find, 'g')
 		}
 		
 		text = text.replaceAll(find, replace)
