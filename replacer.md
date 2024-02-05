@@ -10,11 +10,11 @@ description: "Perform multiple <span class='accent'>text replacements</span> at 
 		gap: 16px;
 	}
 
-	.step > input {
-		margin: 16px 0;
+	.step input {
+		margin: 16px 0 !important;
 	}
 
- 	.step > label {
+ 	.step label {
 		white-space: nowrap;
 	}
 </style>
