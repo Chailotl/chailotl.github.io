@@ -7,6 +7,7 @@ description: "Perform multiple <span class='accent'>text replacements</span> at 
 <style>
 	.step {
 		display: flex;
+		gap: 16px;
 	}
 
 	.step > input {
