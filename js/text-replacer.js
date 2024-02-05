@@ -13,11 +13,15 @@ function update() {
 	let text = input.value;
 
 	for (let replacer of replacers) {
-		let find = replacer.getElementsByClassName('find')[0]
-		let replace = replacer.getElementsByClassName('replace')[0]
-		let regex = replacer.getElementsByClassName('regex')[0]
+		let find = replacer.getElementsByClassName('find')[0].value
+		let replace = replacer.getElementsByClassName('replace')[0].value
+		let regex = replacer.getElementsByClassName('regex')[0].value
+
+		if (regex) {
+			find = new RegExp(find);
+		}
 		
-		text = text.replaceAll(find.value, replace.value)
+		text = text.replaceAll(find, replace)
 	}
 	
 	output.value = text
