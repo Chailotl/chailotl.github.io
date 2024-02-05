@@ -12,17 +12,26 @@ function copy() {
 
 function update() {
 	let text = input.value;
+	let empty = false
 
 	for (let replacer of replacers) {
 		let find = replacer.getElementsByClassName('find')[0].value
 		let replace = replacer.getElementsByClassName('replace')[0].value
 		let regex = replacer.getElementsByClassName('regex')[0].checked
 
+		if (find == '' && replace = '') {
+			empty = true
+		}
+
 		if (regex) {
 			find = new RegExp(find, 'g')
 		}
 		
 		text = text.replaceAll(find, replace)
+	}
+
+	if (empty) {
+		replacers.appendChild(clone.cloneNode())
 	}
 	
 	output.value = text
