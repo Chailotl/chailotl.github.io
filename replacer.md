@@ -5,7 +5,7 @@ description: "Perform multiple <span class='accent'>text replacements</span> at 
 
 <link rel='stylesheet' href='/scss/zalgo.css'>
 <style>
-	.step {
+	.text-replacer {
 		display: flex;
 		gap: 16px;
 	}
@@ -21,7 +21,7 @@ description: "Perform multiple <span class='accent'>text replacements</span> at 
 
 <form>
 	<textarea id='input' rows='5' autofocus placeholder='Type text here...' oninput='update()'></textarea>
-	<div id='text-replacers'>
+	<div>
 		<div class='text-replacer'>
 			<input class='find' type='text' placeholder='Find' oninput='update()'>
 			<input class='replace' type='text' placeholder='Replace' oninput='update()'>
