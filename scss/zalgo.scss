@@ -20,6 +20,7 @@ textarea, input[type="text"], input[type="color"] {
 	vertical-align: middle;
 	border: 0;
 	margin: 16px 0;
+	padding: 2px;
 	width: 100%;
 	resize: none;
 	
@@ -39,6 +40,11 @@ textarea, input[type="text"], input[type="color"] {
 	&::placeholder {
 		color: rgb(100, 100, 100);
 	}
+}
+
+/* Dumb rule to make text inputs visually the same */
+input[type="text"] {
+	height: 31px;
 }
 
 input[type="color"] {
