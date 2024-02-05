@@ -13,7 +13,7 @@ function copy() {
 function update() {
 	let text = input.value;
 
-	text = text.replace(find.value, replace.value)
+	text = text.replaceAll(find.value, replace.value)
 	
 	output.value = text
 }
