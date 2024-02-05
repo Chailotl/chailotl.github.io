@@ -30,7 +30,7 @@ function update() {
 		text = text.replaceAll(find, replace)
 	}
 
-	if (empty) {
+	if (!empty) {
 		replacers.appendChild(clone.cloneNode())
 	}
 	
