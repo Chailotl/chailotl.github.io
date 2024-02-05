@@ -23,10 +23,10 @@ description: "Perform multiple <span class='accent'>text replacements</span> at 
 	<textarea id='input' rows='5' autofocus placeholder='Type text here...' oninput='update()'></textarea>
 	<div id='text-replacers'>
 		<div class='text-replacer'>
-			<input type='text' name='find' placeholder='Find' oninput='update()'>
-			<input type='text' name='replace' placeholder='Replace' oninput='update()'>
+			<input class='find' type='text' placeholder='Find' oninput='update()'>
+			<input class='replace' type='text' placeholder='Replace' oninput='update()'>
 			<label for='regex'>Use RegEx</label>
-			<input type='checkbox' name='regex' oninput='update()'>
+			<input class='regex' type='checkbox' name='regex' oninput='update()'>
 		</div>
 	</div>
 	<textarea id='output' rows='5' readonly placeholder='Output here...'></textarea>
