@@ -11,6 +11,9 @@ A tool that dresses up text with combining characters to make it look c̛̠͙͜�
 ## [Unicode Text Converter](https://chailotl.github.io/unicode)
 A tool to convert plain text into obscure Unicode characters.
 
+## [Multi Text Replacer](https://chailotl.github.io/replacer)
+A tool to perform multiple text replacements at a time.
+
 ## [Discord Timestamp Generator](https://chailotl.github.io/timestamp)
 A tool to generate interactive timestamps for Discord.
 
