@@ -144,7 +144,7 @@ const converters = [
 				if (char == ' ') {
 					edit += char
 				} else {
-					edit += uppercase ? char.toUpperCase() : char
+					edit += uppercase ? char.toUpperCase() : char:toLowerCase()
 					uppercase = !uppercase;
 				}
 			}
