@@ -136,7 +136,7 @@ const converters = [
 	{
 		name: 'Mocking',
 		func: (string) -> {
-			return 'hello'g
+			return 'hello'
 		}
 	}
 	/*
