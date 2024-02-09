@@ -159,6 +159,18 @@ const converters = [
 		}
 	},
 	{
+		name: 'Decimal',
+		func: (input) => {
+			return [...input].map(char=>char.charCodeAt(0) + ' ').join('')
+		}
+	},
+	{
+		name: 'Hexadecimal',
+		func: (input) => {
+			return [...input].map(char=>char.charCodeAt(0).toString(16).padStart(2, '0') + ' ').join('')
+		}
+	},
+	{
 		name: 'ANSI Color Codes',
 		func: (input) => {
 			let edit = ''
