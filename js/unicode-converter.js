@@ -134,7 +134,7 @@ const converters = [
 		digits: ['-----', '.----', '..---', '...--', '....-', '.....', '-....', '--...', '---..', '----.']
 	},
 	{
-		name: 'Mocking',
+		name: 'Alternating Caps',
 		func: (input) => {
 			let edit = ''
 			let uppercase = false
@@ -153,7 +153,7 @@ const converters = [
 		}
 	},
 	{
-		name: 'Colorful ANSI',
+		name: 'ANSI Color Codes',
 		func: (input) => {
 			let edit = ''
 			let color = 0
