@@ -137,7 +137,7 @@ const converters = [
 		name: 'Mocking',
 		func: (input) => {
 			let edit = ''
-			let uppercase = false 
+			let uppercase = false
 
 			for (let i = 0; i < input.length; ++i) {
 				let char = input[i]
@@ -145,7 +145,29 @@ const converters = [
 					edit += char
 				} else {
 					edit += uppercase ? char.toUpperCase() : char.toLowerCase()
-					uppercase = !uppercase;
+					uppercase = !uppercase
+				}
+			}
+
+			return edit
+		}
+	},
+	{
+		name: 'Colorful ANSI',
+		func: (input) => {
+			let edit = ''
+			let color = 0
+			let colors = [31, 33, 32, 36, 34, 35]
+
+			for (let i = 0; i < input.length; ++i) {
+				let char = input[i]
+				if (char == ' ') {
+					edit += char
+				} else {
+					edit += `\x1b${colors[color]}m${char}`
+					if (++color >= colors.length) {
+						color = 0
+					}
 				}
 			}
 
