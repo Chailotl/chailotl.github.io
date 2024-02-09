@@ -139,7 +139,7 @@ const converters = [
 			let edit = ''
 
 			for (let i = 0; i < input.length; ++i) {
-				edit += char.charCodeAt(i).toString(2).padStart(8, '0') + ' '
+				edit += input.charCodeAt(i).toString(2).padStart(8, '0') + ' '
 			}
 
 			return edit
