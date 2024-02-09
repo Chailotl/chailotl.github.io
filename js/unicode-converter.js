@@ -164,7 +164,7 @@ const converters = [
 				if (char == ' ') {
 					edit += char
 				} else {
-					edit += `\x1b${colors[color]}m${char}`
+					edit += `\x1b[${colors[color]}m${char}`
 					if (++color >= colors.length) {
 						color = 0
 					}
