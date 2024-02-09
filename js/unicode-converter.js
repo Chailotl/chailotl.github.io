@@ -246,8 +246,10 @@ function update() {
 				else {
 					edit += input.value[i]
 				}
-				
-				if (obj.name == 'Morse') {
+
+				if (obj.name == 'Negative Squared') {
+					edit += '\uFE0E;'
+				} else if (obj.name == 'Morse') {
 					edit += ' '
 				}
 			}
