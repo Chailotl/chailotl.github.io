@@ -167,7 +167,7 @@ const converters = [
 	{
 		name: 'Hexadecimal',
 		func: (input) => {
-			return [...input].map(char=>char.charCodeAt(0).toString(16).padStart(2, '0') + ' ').join('')
+			return [...input].map(char=>char.charCodeAt(0).toString(16).toUpperCase().padStart(2, '0') + ' ').join('')
 		}
 	},
 	{
