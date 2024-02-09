@@ -135,19 +135,21 @@ const converters = [
 	},
 	{
 		name: 'Mocking',
-		func: (string) => {
-			let str = ''
+		func: (input) => {
+			let edit = ''
 			let uppercase = false 
 
-			for (let i = 0; i < string.length; ++i) {
-				let char = string[i]
+			for (let i = 0; i < input.length; ++i) {
+				let char = input[i]
 				if (char == ' ') {
-					str += char
+					edit += char
 				} else {
-					str += uppercase ? char.toUpperCase() : char
+					edit += uppercase ? char.toUpperCase() : char
 					uppercase = !uppercase;
 				}
 			}
+
+			return edit
 		}
 	}
 	/*
